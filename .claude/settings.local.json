@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(colcon build *)",
+      "Bash(python3 -c \"import pyaudio; p = pyaudio.PyAudio\\(\\); print\\('Input devices:'\\); [print\\(f'  [{i}] {p.get_device_info_by_index\\(i\\)[\\\\\"name\\\\\"]} — inputs={p.get_device_info_by_index\\(i\\)[\\\\\"maxInputChannels\\\\\"]}'\\) for i in range\\(p.get_device_count\\(\\)\\) if p.get_device_info_by_index\\(i\\)['maxInputChannels'] > 0]; p.terminate\\(\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import librosa\")",
+      "Bash(python3 -c \"import speech_recognition; print\\('speech_recognition OK', speech_recognition.__version__\\)\")",
+      "Bash(python3 -c \"import vosk; print\\('vosk OK'\\)\")",
+      "Bash(python3 -c \"import openwakeword; print\\('openwakeword OK'\\)\")",
+      "Bash(python3 -c \"import whisper; print\\('whisper OK', whisper.__version__\\)\")"
+    ]
+  }
+}

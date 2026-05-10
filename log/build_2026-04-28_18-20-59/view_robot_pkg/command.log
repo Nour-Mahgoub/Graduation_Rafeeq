@@ -1,0 +1,2 @@
+Invoking command in '/home/nour-mahgoub/testingGrad/build/view_robot_pkg': /usr/bin/cmake /home/nour-mahgoub/testingGrad -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/testingGrad/install/view_robot_pkg
+Invoked command in '/home/nour-mahgoub/testingGrad/build/view_robot_pkg' returned '1': /usr/bin/cmake /home/nour-mahgoub/testingGrad -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/testingGrad/install/view_robot_pkg

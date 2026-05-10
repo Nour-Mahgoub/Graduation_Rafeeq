@@ -1,0 +1,23 @@
+[0.944s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data
+[1.258s] running egg_info
+[1.282s] writing ../../build/rafeeq_description/rafeeq_description.egg-info/PKG-INFO
+[1.282s] writing dependency_links to ../../build/rafeeq_description/rafeeq_description.egg-info/dependency_links.txt
+[1.283s] writing entry points to ../../build/rafeeq_description/rafeeq_description.egg-info/entry_points.txt
+[1.283s] writing requirements to ../../build/rafeeq_description/rafeeq_description.egg-info/requires.txt
+[1.283s] writing top-level names to ../../build/rafeeq_description/rafeeq_description.egg-info/top_level.txt
+[1.332s] reading manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+[1.333s] writing manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+[1.334s] running build
+[1.334s] running build_py
+[1.334s] running install
+[1.340s] running install_lib
+[1.365s] running install_data
+[1.366s] copying urdf/robot_description.urdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/urdf
+[1.367s] running install_egg_info
+[1.393s] removing '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description-0.0.0-py3.12.egg-info' (and everything under it)
+[1.394s] Copying ../../build/rafeeq_description/rafeeq_description.egg-info to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description-0.0.0-py3.12.egg-info
+[1.395s] running install_scripts
+[1.561s] Installing scan_relay script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.561s] Installing teleop_keyboard script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.562s] writing list of installed files to '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log'
+[1.591s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data

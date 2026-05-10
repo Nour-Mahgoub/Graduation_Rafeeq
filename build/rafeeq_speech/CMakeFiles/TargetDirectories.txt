@@ -1,0 +1,9 @@
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/uninstall.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/rafeeq_speech_uninstall.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/test.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/edit_cache.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/rebuild_cache.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/list_install_components.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/install.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/install/local.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/CMakeFiles/install/strip.dir

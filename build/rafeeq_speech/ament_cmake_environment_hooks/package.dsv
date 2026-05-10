@@ -1,0 +1,4 @@
+source;share/rafeeq_speech/local_setup.bash
+source;share/rafeeq_speech/local_setup.dsv
+source;share/rafeeq_speech/local_setup.sh
+source;share/rafeeq_speech/local_setup.zsh

@@ -1,0 +1,56 @@
+[0.225s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization
+[0.249s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.249s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.249s]   CMake.
+[0.249s] 
+[0.250s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.250s]   to tell CMake that the project requires at least <min> but has been updated
+[0.250s]   to work with policies introduced by <max> or earlier.
+[0.250s] 
+[0.250s] [0m
+[0.346s] -- The C compiler identification is GNU 13.3.0
+[0.447s] -- The CXX compiler identification is GNU 13.3.0
+[0.457s] -- Detecting C compiler ABI info
+[0.516s] -- Detecting C compiler ABI info - done
+[0.532s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.532s] -- Detecting C compile features
+[0.533s] -- Detecting C compile features - done
+[0.546s] -- Detecting CXX compiler ABI info
+[0.605s] -- Detecting CXX compiler ABI info - done
+[0.621s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.621s] -- Detecting CXX compile features
+[0.621s] -- Detecting CXX compile features - done
+[0.646s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.894s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[1.047s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.117s] Error parsing '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization/package.xml':
+[5.064s] Traceback (most recent call last):
+[5.064s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[5.064s]     main()
+[5.064s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[5.064s]     raise e
+[5.064s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[5.065s]     package = parse_package_string(
+[5.065s]               ^^^^^^^^^^^^^^^^^^^^^
+[5.065s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[5.065s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[5.065s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization/package.xml':
+[5.065s] Error(s):
+[5.065s] - The generic dependency on 'tf2_ros' is redundant with: build_depend, build_export_depend, exec_depend
+[5.065s] - The generic dependency on 'tf2_geometry_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[5.065s] - The generic dependency on 'nav_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[5.065s] - The generic dependency on 'geometry_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[5.099s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[5.099s]   execute_process(/usr/bin/python3
+[5.099s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[5.099s]   /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization/package.xml
+[5.099s]   /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/ament_cmake_core/package.cmake)
+[5.099s]   returned error code 1
+[5.099s] Call Stack (most recent call first):
+[5.099s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[5.099s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[5.099s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[5.099s] 
+[5.099s] [0m
+[5.100s] -- Configuring incomplete, errors occurred!
+[5.104s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization

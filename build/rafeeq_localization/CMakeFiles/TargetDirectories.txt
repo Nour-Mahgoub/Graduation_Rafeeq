@@ -1,0 +1,9 @@
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/uninstall.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/rafeeq_localization_uninstall.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/test.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/edit_cache.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/rebuild_cache.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/list_install_components.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/install.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/install/local.dir
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/CMakeFiles/install/strip.dir

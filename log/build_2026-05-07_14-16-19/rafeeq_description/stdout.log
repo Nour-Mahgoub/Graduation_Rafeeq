@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/rafeeq_description/rafeeq_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/rafeeq_description/rafeeq_description.egg-info/dependency_links.txt
+writing entry points to ../../build/rafeeq_description/rafeeq_description.egg-info/entry_points.txt
+writing requirements to ../../build/rafeeq_description/rafeeq_description.egg-info/requires.txt
+writing top-level names to ../../build/rafeeq_description/rafeeq_description.egg-info/top_level.txt
+reading manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/__init__.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/teleop_keyboard.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/scan_relay.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/teleop_keyboard.py to teleop_keyboard.cpython-312.pyc
+byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/scan_relay.py to scan_relay.cpython-312.pyc
+running install_data
+copying launch/gazebo.launch.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/launch
+copying urdf/robot_description.urdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/urdf
+running install_egg_info
+Copying ../../build/rafeeq_description/rafeeq_description.egg-info to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description-0.0.0-py3.12.egg-info
+running install_scripts
+Installing scan_relay script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+Installing teleop_keyboard script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+writing list of installed files to '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log'

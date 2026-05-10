@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/rafeeq_speech/speech_node.py
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/launch
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/launch/speech_recognition.launch.py
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/rafeeq_model.tflite
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/labels.txt
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/package_run_dependencies/rafeeq_speech
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/parent_prefix_path/rafeeq_speech
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/path.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/path.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.bash
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.zsh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.dsv
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/packages/rafeeq_speech
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/cmake/rafeeq_speechConfig.cmake
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/cmake/rafeeq_speechConfig-version.cmake
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.xml

@@ -1,0 +1,21 @@
+[2.217s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_node build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/install.log --single-version-externally-managed install_data
+[2.821s] running egg_info
+[2.868s] writing ../../build/serial_node/serial_node.egg-info/PKG-INFO
+[2.868s] writing dependency_links to ../../build/serial_node/serial_node.egg-info/dependency_links.txt
+[2.869s] writing entry points to ../../build/serial_node/serial_node.egg-info/entry_points.txt
+[2.869s] writing requirements to ../../build/serial_node/serial_node.egg-info/requires.txt
+[2.869s] writing top-level names to ../../build/serial_node/serial_node.egg-info/top_level.txt
+[2.962s] reading manifest file '../../build/serial_node/serial_node.egg-info/SOURCES.txt'
+[2.963s] writing manifest file '../../build/serial_node/serial_node.egg-info/SOURCES.txt'
+[2.964s] running build
+[2.964s] running build_py
+[2.964s] running install
+[2.973s] running install_lib
+[3.015s] running install_data
+[3.015s] running install_egg_info
+[3.059s] removing '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages/serial_node-0.0.0-py3.12.egg-info' (and everything under it)
+[3.060s] Copying ../../build/serial_node/serial_node.egg-info to /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages/serial_node-0.0.0-py3.12.egg-info
+[3.061s] running install_scripts
+[3.315s] Installing serial_bridge script to /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/serial_node
+[3.315s] writing list of installed files to '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/install.log'
+[3.360s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_node build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/install.log --single-version-externally-managed install_data
