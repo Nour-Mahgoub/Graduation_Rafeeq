@@ -21,10 +21,11 @@ class SpeechRecognitionNode(Node):
         # ── Parameters ──────────────────────────────────────────────────────
         self.declare_parameter('model_path', 'rafeeq_model.tflite')
         self.declare_parameter('labels_path', 'labels.txt')
-        self.declare_parameter('volume_threshold', 0.06)
-        self.declare_parameter('confidence_threshold', 0.70)
-        self.declare_parameter('wake_word_threshold', 0.10)
-        self.declare_parameter('duration', 1.5)
+        self.declare_parameter('volume_threshold', 0.02)      # matches working main.py (was 0.04)
+        self.declare_parameter('confidence_threshold', 0.70)  # matches working main.py
+        self.declare_parameter('wake_word_threshold', 0.50)   # min confidence to accept "rafeeq"
+        self.declare_parameter('duration', 1.5)               # MUST stay 1.5 — model trained on this
+        self.declare_parameter('confirm_timeout', 5.0)        # seconds to wait for confirmation
 
         model_path  = self.get_parameter('model_path').get_parameter_value().string_value
         labels_path = self.get_parameter('labels_path').get_parameter_value().string_value
@@ -32,6 +33,7 @@ class SpeechRecognitionNode(Node):
         self.confidence_threshold = self.get_parameter('confidence_threshold').get_parameter_value().double_value
         self.wake_word_threshold  = self.get_parameter('wake_word_threshold').get_parameter_value().double_value
         self.duration             = self.get_parameter('duration').get_parameter_value().double_value
+        self.confirm_timeout      = self.get_parameter('confirm_timeout').get_parameter_value().double_value
         self.samples_per_track    = int(SAMPLE_RATE * self.duration)
 
         # ── Publisher ────────────────────────────────────────────────────────
@@ -62,6 +64,7 @@ class SpeechRecognitionNode(Node):
         return float(np.sqrt(np.mean(audio ** 2)))
 
     def _extract_features(self, audio_array: np.ndarray) -> np.ndarray:
+        """Matches main.py exactly — same feature extraction as training."""
         y, _ = librosa.effects.trim(audio_array, top_db=20)
         if len(y) > self.samples_per_track:
             y = y[:self.samples_per_track]
@@ -78,31 +81,41 @@ class SpeechRecognitionNode(Node):
         idx = int(np.argmax(output))
         return idx, float(output[idx]), self.labels[idx], output
 
-    def _record_window(self, stream, duration_s: float) -> np.ndarray:
-        """Record `duration_s` seconds and return a float32 audio array."""
-        n_chunks = int(SAMPLE_RATE / CHUNK * duration_s)
-        frames = [stream.read(CHUNK, exception_on_overflow=False) for _ in range(n_chunks)]
-        raw = b''.join(frames)
-        return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    def _listen_and_classify(self, stream, timeout_s: float = None):
+        """
+        Mirrors the approach from the working main.py:
+          - Poll chunks until voice is detected (RMS > volume_threshold)
+          - Keep the trigger chunk — don't discard it — so the first
+            phoneme of the word is captured (this was the original bug)
+          - Record a full 1.5 s window from that point
+          - Run inference and return (idx, confidence, label)
 
-    def _wait_for_voice(self, stream, timeout_s: float = 3.0):
+        Returns None if timeout_s is set and no voice is heard in time.
         """
-        Wait up to `timeout_s` seconds for a voice trigger.
-        Returns a float32 audio array starting from the trigger chunk,
-        or None if no voice is heard within the timeout.
-        """
-        n_timeout = int(SAMPLE_RATE / CHUNK * timeout_s)
-        for _ in range(n_timeout):
-            trigger_chunk = stream.read(CHUNK, exception_on_overflow=False)
-            if self._get_rms(trigger_chunk) > self.volume_threshold:
-                # Voice detected — capture the full window from this point
-                n_window = int(SAMPLE_RATE / CHUNK * self.duration)
-                window_frames = [trigger_chunk] + [
+        n_window = int(SAMPLE_RATE / CHUNK * self.duration)  # ~23 chunks for 1.5 s
+        n_timeout = int(SAMPLE_RATE / CHUNK * timeout_s) if timeout_s is not None else None
+        count = 0
+
+        while self._running:
+            chunk = stream.read(CHUNK, exception_on_overflow=False)
+
+            if self._get_rms(chunk) > self.volume_threshold:
+                # ✅ Include the trigger chunk in the recording window
+                #    (main.py does exactly this with `frames = [data]`)
+                frames = [chunk] + [
                     stream.read(CHUNK, exception_on_overflow=False)
                     for _ in range(n_window)
                 ]
-                raw = b''.join(window_frames)
-                return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+                raw = b''.join(frames)
+                audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+                idx, conf, label, _ = self._run_inference(audio)
+                return idx, conf, label
+
+            if n_timeout is not None:
+                count += 1
+                if count >= n_timeout:
+                    return None  # timed out
+
         return None
 
     # ── Main audio loop ───────────────────────────────────────────────────────
@@ -120,73 +133,75 @@ class SpeechRecognitionNode(Node):
         try:
             while self._running:
                 # ════════════════════════════════════════════════════════════
-                # STATE 1 — SLEEPING: wait indefinitely for wake word "rafeeq"
+                # STATE 1 — SLEEPING: wait for wake word "rafeeq"
+                # Uses _listen_and_classify (same as main.py) so the trigger
+                # chunk is included and the full word is captured.
                 # ════════════════════════════════════════════════════════════
                 self.get_logger().info('Sleeping — say "rafeeq" to activate.')
 
-                rafeeq_idx = self.labels.index('rafeeq')
-
                 while self._running:
-                    audio = self._wait_for_voice(stream, timeout_s=5.0)
-                    if audio is None:
-                        continue  # no sound — keep sleeping
-                    idx, conf, word, scores = self._run_inference(audio)
-                    rafeeq_score = float(scores[rafeeq_idx])
-                    # Print all scores so we can tune the threshold
-                    score_str = ', '.join(
-                        f'{self.labels[i]}={scores[i]*100:.1f}%'
-                        for i in np.argsort(scores)[::-1]
-                    )
-                    self.get_logger().info(f'[sleep] {score_str}')
-                    if rafeeq_score >= self.wake_word_threshold:
+                    result = self._listen_and_classify(stream, timeout_s=None)
+                    if result is None:
+                        break  # node is shutting down
+
+                    idx, conf, label = result
+
+                    if label == 'rafeeq' and conf >= self.wake_word_threshold:
                         self.get_logger().info(
-                            f'Wake word detected! rafeeq={rafeeq_score*100:.1f}% — activated!'
+                            f'Wake word "rafeeq" confirmed ({conf*100:.1f}%) — activated!'
                         )
-                        break  # → AWAKE
+                        break
+                    else:
+                        self.get_logger().debug(
+                            f'Ignored: "{label}" ({conf*100:.1f}%)'
+                        )
 
                 if not self._running:
                     break
 
                 # ════════════════════════════════════════════════════════════
-                # STATE 2 — RECORD COMMAND: immediately record a fixed window
+                # STATE 2 — LISTEN FOR COMMAND
+                # Same approach: wait for voice → record 1.5 s → classify.
                 # ════════════════════════════════════════════════════════════
-                self.get_logger().info('Recording command now — speak!')
-                audio = self._record_window(stream, duration_s=self.duration)
+                self.get_logger().info('Activated! Speak your command now...')
 
-                # ── Classify ──────────────────────────────────────────────
-                idx, confidence, command, _ = self._run_inference(audio)
-                self.get_logger().info(
-                    f'Heard "{command}" ({confidence*100:.1f}%)'
-                )
+                result = self._listen_and_classify(stream, timeout_s=5.0)
 
-                # "stop" / "sleep" or low confidence → go back to sleep
+                if result is None:
+                    self.get_logger().warn('No command heard — going back to sleep.')
+                    continue
+
+                idx, confidence, command = result
+                self.get_logger().info(f'Heard "{command}" ({confidence*100:.1f}%)')
+
                 if command in ('stop', 'sleep'):
                     self.get_logger().info(f'"{command}" — going back to sleep.')
-                    continue  # → SLEEPING
+                    continue
 
                 if confidence < self.confidence_threshold:
                     self.get_logger().info(
                         f'Low confidence ({confidence*100:.1f}%) — going back to sleep.'
                     )
-                    continue  # → SLEEPING
+                    continue
 
                 # ════════════════════════════════════════════════════════════
-                # STATE 3 — CONFIRM: wait for voice then verify
+                # STATE 3 — CONFIRM
+                # Same approach again: wait for voice → record 1.5 s → verify.
                 # ════════════════════════════════════════════════════════════
                 self.get_logger().warn(
                     f'Detected "{command}" ({confidence*100:.1f}%). '
-                    f'Say it again to confirm (3 s)...'
+                    f'Say it again to confirm ({self.confirm_timeout:.0f} s)...'
                 )
 
-                confirm_audio = self._wait_for_voice(stream, timeout_s=3.0)
+                result = self._listen_and_classify(stream, timeout_s=self.confirm_timeout)
 
-                if confirm_audio is None:
+                if result is None:
                     self.get_logger().warn(
                         f'No confirmation — "{command}" discarded, going back to sleep.'
                     )
-                    continue  # → SLEEPING
+                    continue
 
-                c_idx, c_conf, c_command, _ = self._run_inference(confirm_audio)
+                c_idx, c_conf, c_command = result
 
                 if c_idx == idx and c_conf >= self.confidence_threshold:
                     self.get_logger().info(
@@ -203,7 +218,6 @@ class SpeechRecognitionNode(Node):
                     )
 
                 # Always return to sleep after one command cycle
-                # → SLEEPING
 
         finally:
             stream.stop_stream()
@@ -229,3 +243,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

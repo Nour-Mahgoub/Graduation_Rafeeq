@@ -26,8 +26,8 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'volume_threshold',
-            default_value='0.04',
-            description='RMS threshold for voice activity detection',
+            default_value='0.02',
+            description='RMS threshold for voice activity detection (matches main.py)',
         ),
         DeclareLaunchArgument(
             'confidence_threshold',
@@ -36,13 +36,18 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'wake_word_threshold',
-            default_value='0.10',
-            description='Minimum rafeeq score to trigger wake (lower than confidence_threshold)',
+            default_value='0.50',
+            description='Minimum confidence for the model to accept "rafeeq" as wake word',
         ),
         DeclareLaunchArgument(
             'duration',
             default_value='1.5',
-            description='Recording window length in seconds',
+            description='Recording window in seconds — must match training (DO NOT change)',
+        ),
+        DeclareLaunchArgument(
+            'confirm_timeout',
+            default_value='5.0',
+            description='Seconds to wait for command confirmation before going back to sleep',
         ),
 
         Node(
@@ -58,6 +63,7 @@ def generate_launch_description():
                 'confidence_threshold': LaunchConfiguration('confidence_threshold'),
                 'wake_word_threshold':  LaunchConfiguration('wake_word_threshold'),
                 'duration':             LaunchConfiguration('duration'),
+                'confirm_timeout':      LaunchConfiguration('confirm_timeout'),
             }],
         ),
     ])
