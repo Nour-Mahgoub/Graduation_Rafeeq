@@ -1,0 +1,6 @@
+ cd LocalSpeechModel_Rafeeq/
+source speech_env/bin/activate
+MOVE TO OUR PROJECT SRC/RAFEEQSPEECH
+ colcon build --packages-select rafeeq_speech
+source install\setup.bash
+os2 launch rafeeq_speech  speech_recognition.launch.py
