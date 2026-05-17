@@ -1,0 +1,60 @@
+[0.256s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation
+[0.405s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.450s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.455s] -- Found navigation2: 1.3.11 (/opt/ros/jazzy/share/navigation2/cmake)
+[0.455s] -- Found nav2_bringup: 1.3.11 (/opt/ros/jazzy/share/nav2_bringup/cmake)
+[0.455s] -- Found slam_toolbox: 2.8.4 (/opt/ros/jazzy/share/slam_toolbox/cmake)
+[0.476s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.482s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.490s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.500s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.657s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.658s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.675s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.812s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.815s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.816s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.886s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.886s] -- Found OGRE
+[0.887s] --   static     : OFF
+[0.887s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.887s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.887s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.887s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.887s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[0.887s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.887s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[0.887s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.888s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.888s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.888s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.992s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.077s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.157s] -- Added test 'lint_cmake' to check CMake code style
+[1.157s] -- Added test 'xmllint' to check XML markup files
+[1.158s] -- Configuring done (0.9s)
+[1.163s] -- Generating done (0.0s)
+[1.205s] -- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation
+[1.213s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation
+[1.214s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[1.237s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[1.240s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation
+[1.242s] -- Install configuration: ""
+[1.242s] -- Execute custom install script
+[1.242s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/config/rafeeq_nav2_default_parans.yaml
+[1.242s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/package_run_dependencies/rafeeq_navigation
+[1.242s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/parent_prefix_path/rafeeq_navigation
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/ament_prefix_path.sh
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/ament_prefix_path.dsv
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/path.sh
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/path.dsv
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.bash
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.sh
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.zsh
+[1.243s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.dsv
+[1.243s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.dsv
+[1.246s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/packages/rafeeq_navigation
+[1.246s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/cmake/rafeeq_navigationConfig.cmake
+[1.246s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/cmake/rafeeq_navigationConfig-version.cmake
+[1.246s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.xml
+[1.247s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation

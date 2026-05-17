@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation/rviz": No such
+  file or directory.
+
+[0m

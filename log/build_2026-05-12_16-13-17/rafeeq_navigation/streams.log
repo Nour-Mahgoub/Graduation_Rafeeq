@@ -1,0 +1,22 @@
+[0.248s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[0.506s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[0.508s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation
+[0.513s] -- Install configuration: ""
+[0.513s] -- Execute custom install script
+[0.513s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/config/rafeeq_nav2_default_params.yaml
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/package_run_dependencies/rafeeq_navigation
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/parent_prefix_path/rafeeq_navigation
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/ament_prefix_path.sh
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/ament_prefix_path.dsv
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/path.sh
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/environment/path.dsv
+[0.516s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.bash
+[0.517s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.sh
+[0.517s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.zsh
+[0.517s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/local_setup.dsv
+[0.517s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.dsv
+[0.521s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/packages/rafeeq_navigation
+[0.521s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/cmake/rafeeq_navigationConfig.cmake
+[0.521s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/cmake/rafeeq_navigationConfig-version.cmake
+[0.521s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.xml
+[0.525s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation

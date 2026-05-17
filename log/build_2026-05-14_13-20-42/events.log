@@ -1,0 +1,320 @@
+[0.000000] (-) TimerEvent: {}
+[0.000732] (-) JobUnselected: {'identifier': 'rafeeq_bringup'}
+[0.000812] (-) JobUnselected: {'identifier': 'rafeeq_description'}
+[0.000876] (-) JobUnselected: {'identifier': 'rafeeq_localization'}
+[0.000912] (-) JobUnselected: {'identifier': 'rafeeq_navigation'}
+[0.000960] (-) JobUnselected: {'identifier': 'rafeeq_speech'}
+[0.002560] (-) JobUnselected: {'identifier': 'serial_node'}
+[0.002617] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.004954] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.005159] (kinect_ros2) JobStarted: {'identifier': 'kinect_ros2'}
+[0.016281] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'cmake'}
+[0.017458] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'build'}
+[0.018677] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', '--', '-j20', '-l20'], 'cwd': '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/nour-mahgoub/Graduation_Rafeeq', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/nour-mahgoub/gradproject/src/rafeeq_description/meshes', 'AI_AGENT': 'claude-code_2-1-139_agent', 'USER': 'nour-mahgoub', 'SNAP_COMMON': '/var/snap/code/common', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'LC_TIME': 'ar_EG.UTF-8', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/238/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'GIO_MODULE_DIR': '/home/nour-mahgoub/snap/code/common/.cache/gio-modules', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLAUDE_AGENT_SDK_VERSION': '0.2.139', 'SNAP_UID': '1000', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/nour-mahgoub/ORB_SLAM3/lib:/usr/local/lib:', 'HOME': '/home/nour-mahgoub', 'CHROME_DESKTOP': 'code.desktop', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32', 'OLDPWD': '/home/nour-mahgoub', 'DESKTOP_SESSION': 'ubuntu', 'SNAP_USER_DATA': '/home/nour-mahgoub/snap/code/238', 'GTK_PATH': '/snap/code/238/usr/lib/x86_64-linux-gnu/gtk-3.0', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-9ed91141-1.11-main.sock', 'GTK_IM_MODULE_FILE': '/home/nour-mahgoub/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'COPILOT_OTEL_FILE_EXPORTER_PATH': '/dev/null', 'MANAGERPID': '2002', 'SYSTEMD_EXEC_PID': '2536', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '238', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3476', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nour-mahgoub', 'SNAP_CONTEXT': '7Hs9-li3yGvBm7W8Eyryw7j389j_bEyTMa5bTLh6fkeVuora53Mj', 'JOURNAL_STREAM': '8:28758', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '8b640eef', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nour-mahgoub', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SNAP_INSTANCE_NAME': 'code', 'FC_FONTATIONS': '1', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/usr/bin:/home/nour-mahgoub/.local/bin:/home/nour-mahgoub/.npm-global/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/nour-mahgoub/.npm-global/bin:/home/nour-mahgoub/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nourmahgoub-Dell-G15-5520:@/tmp/.ICE-unix/2493,unix/nourmahgoub-Dell-G15-5520:/tmp/.ICE-unix/2493', 'GTK_EXE_PREFIX': '/snap/code/238/usr', 'INVOCATION_ID': '4cac268fb1b44b558030966f04d33c69', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'SNAP_DATA': '/var/snap/code/238', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'CLAUDE_EFFORT': 'high', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/238/usr/lib/locale', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XDG_DATA_HOME': '/home/nour-mahgoub/snap/code/238/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KBJ4O3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'COPILOT_OTEL_ENABLED': 'true', 'SNAP_USER_COMMON': '/home/nour-mahgoub/snap/code/common', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nour-mahgoub/snap/code/238/.local/share/glib-2.0/schemas', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SNAP_COOKIE': '7Hs9-li3yGvBm7W8Eyryw7j389j_bEyTMa5bTLh6fkeVuora53Mj', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:c0c82792-f23f-4cf4-a129-0fca0e3acb6b', 'GDK_PIXBUF_MODULEDIR': '/snap/code/238/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'CLAUDE_CODE_SESSION_ID': 'fcc5cb76-d61c-4e72-9ddf-ad91571a5cdd', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/nour-mahgoub/gradproject/src/rafeeq_description/meshes', 'SNAP_NAME': 'code', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'CLAUDECODE': '1', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GDK_PIXBUF_MODULE_FILE': '/home/nour-mahgoub/snap/code/common/.cache/gdk-pixbuf-loaders.cache', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/usr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', 'VSCODE_CLI': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SNAP_REAL_HOME': '/home/nour-mahgoub', 'VSCODE_CODE_CACHE_PATH': '/home/nour-mahgoub/.config/Code/CachedData/8b640eef5a6c6089c029249d48efa5c99adf7d51', 'XDG_DATA_DIRS': '/home/nour-mahgoub/snap/code/238/.local/share:/home/nour-mahgoub/snap/code/238:/snap/code/238/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/nour-mahgoub/.vscode/extensions/anthropic.claude-code-2.1.139-linux-x64/resources/native-binary/claude', 'SNAP_EUID': '1000', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'SNAP': '/snap/code/238', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4530', 'COPILOT_OTEL_EXPORTER_TYPE': 'file'}), 'shell': False}
+[0.060827] (kinect_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099638] (-) TimerEvent: {}
+[0.199879] (-) TimerEvent: {}
+[0.300112] (-) TimerEvent: {}
+[0.400322] (-) TimerEvent: {}
+[0.468202] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.18 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[0.500417] (-) TimerEvent: {}
+[0.542403] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.560928] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.583787] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600539] (-) TimerEvent: {}
+[0.606950] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700653] (-) TimerEvent: {}
+[0.800855] (-) TimerEvent: {}
+[0.814443] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.817057] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.871062] (kinect_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.900984] (-) TimerEvent: {}
+[1.001188] (-) TimerEvent: {}
+[1.030196] (kinect_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.101399] (-) TimerEvent: {}
+[1.172137] (kinect_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[1.179501] (kinect_ros2) StdoutLine: {'line': b'-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[1.201525] (-) TimerEvent: {}
+[1.201948] (kinect_ros2) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[1.203925] (kinect_ros2) StdoutLine: {'line': b'-- Found depth_image_proc: 5.0.11 (/opt/ros/jazzy/share/depth_image_proc/cmake)\n'}
+[1.221235] (kinect_ros2) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[1.261282] (kinect_ros2) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[1.263916] (kinect_ros2) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.301618] (-) TimerEvent: {}
+[1.401812] (-) TimerEvent: {}
+[1.502031] (-) TimerEvent: {}
+[1.576464] (kinect_ros2) StdoutLine: {'line': b'-- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)\n'}
+[1.602162] (-) TimerEvent: {}
+[1.702430] (-) TimerEvent: {}
+[1.802596] (-) TimerEvent: {}
+[1.835636] (kinect_ros2) StdoutLine: {'line': b'-- Configuring done (1.8s)\n'}
+[1.887329] (kinect_ros2) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.902814] (-) TimerEvent: {}
+[1.989428] (kinect_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2\n'}
+[2.003035] (-) TimerEvent: {}
+[2.031937] (kinect_ros2) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o\n'}
+[2.103264] (-) TimerEvent: {}
+[2.203487] (-) TimerEvent: {}
+[2.303785] (-) TimerEvent: {}
+[2.404084] (-) TimerEvent: {}
+[2.504396] (-) TimerEvent: {}
+[2.604592] (-) TimerEvent: {}
+[2.704884] (-) TimerEvent: {}
+[2.805167] (-) TimerEvent: {}
+[2.905455] (-) TimerEvent: {}
+[3.005685] (-) TimerEvent: {}
+[3.105916] (-) TimerEvent: {}
+[3.206126] (-) TimerEvent: {}
+[3.306353] (-) TimerEvent: {}
+[3.406533] (-) TimerEvent: {}
+[3.506710] (-) TimerEvent: {}
+[3.606921] (-) TimerEvent: {}
+[3.707136] (-) TimerEvent: {}
+[3.807417] (-) TimerEvent: {}
+[3.907595] (-) TimerEvent: {}
+[4.007774] (-) TimerEvent: {}
+[4.107992] (-) TimerEvent: {}
+[4.208265] (-) TimerEvent: {}
+[4.308508] (-) TimerEvent: {}
+[4.408692] (-) TimerEvent: {}
+[4.508909] (-) TimerEvent: {}
+[4.609192] (-) TimerEvent: {}
+[4.709483] (-) TimerEvent: {}
+[4.809659] (-) TimerEvent: {}
+[4.909869] (-) TimerEvent: {}
+[5.010086] (-) TimerEvent: {}
+[5.110397] (-) TimerEvent: {}
+[5.210578] (-) TimerEvent: {}
+[5.310773] (-) TimerEvent: {}
+[5.410982] (-) TimerEvent: {}
+[5.511262] (-) TimerEvent: {}
+[5.611499] (-) TimerEvent: {}
+[5.711682] (-) TimerEvent: {}
+[5.811892] (-) TimerEvent: {}
+[5.912107] (-) TimerEvent: {}
+[6.012399] (-) TimerEvent: {}
+[6.112582] (-) TimerEvent: {}
+[6.212802] (-) TimerEvent: {}
+[6.313018] (-) TimerEvent: {}
+[6.413303] (-) TimerEvent: {}
+[6.513512] (-) TimerEvent: {}
+[6.613706] (-) TimerEvent: {}
+[6.713992] (-) TimerEvent: {}
+[6.814282] (-) TimerEvent: {}
+[6.914582] (-) TimerEvent: {}
+[6.977482] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp: In static member function \xe2\x80\x98static void kinect_ros2::KinectRosComponent::depth_cb(freenect_device*, void*, uint32_t)\xe2\x80\x99:\n'}
+[6.977942] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp:109:53: warning: unused parameter \xe2\x80\x98dev\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.978037] (kinect_ros2) StderrLine: {'line': b'  109 | void KinectRosComponent::depth_cb(freenect_device * dev, void * depth_ptr, uint32_t timestamp)\n'}
+[6.978104] (kinect_ros2) StderrLine: {'line': b'      |                                   ~~~~~~~~~~~~~~~~~~^~~\n'}
+[6.978172] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp:109:85: warning: unused parameter \xe2\x80\x98timestamp\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.978234] (kinect_ros2) StderrLine: {'line': b'  109 | void KinectRosComponent::depth_cb(freenect_device * dev, void * depth_ptr, uint32_t timestamp)\n'}
+[6.978293] (kinect_ros2) StderrLine: {'line': b'      |                                                                            ~~~~~~~~~^~~~~~~~~\n'}
+[6.978371] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp: In static member function \xe2\x80\x98static void kinect_ros2::KinectRosComponent::rgb_cb(freenect_device*, void*, uint32_t)\xe2\x80\x99:\n'}
+[6.978435] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp:123:51: warning: unused parameter \xe2\x80\x98dev\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.978496] (kinect_ros2) StderrLine: {'line': b'  123 | void KinectRosComponent::rgb_cb(freenect_device * dev, void * rgb_ptr, uint32_t timestamp)\n'}
+[6.978556] (kinect_ros2) StderrLine: {'line': b'      |                                 ~~~~~~~~~~~~~~~~~~^~~\n'}
+[6.978613] (kinect_ros2) StderrLine: {'line': b'/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp:123:81: warning: unused parameter \xe2\x80\x98timestamp\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.978672] (kinect_ros2) StderrLine: {'line': b'  123 | void KinectRosComponent::rgb_cb(freenect_device * dev, void * rgb_ptr, uint32_t timestamp)\n'}
+[6.978733] (kinect_ros2) StderrLine: {'line': b'      |                                                                        ~~~~~~~~~^~~~~~~~~\n'}
+[7.014797] (-) TimerEvent: {}
+[7.115088] (-) TimerEvent: {}
+[7.215381] (-) TimerEvent: {}
+[7.315691] (-) TimerEvent: {}
+[7.415974] (-) TimerEvent: {}
+[7.516272] (-) TimerEvent: {}
+[7.616626] (-) TimerEvent: {}
+[7.716928] (-) TimerEvent: {}
+[7.817216] (-) TimerEvent: {}
+[7.917529] (-) TimerEvent: {}
+[8.017808] (-) TimerEvent: {}
+[8.118103] (-) TimerEvent: {}
+[8.218392] (-) TimerEvent: {}
+[8.318680] (-) TimerEvent: {}
+[8.418974] (-) TimerEvent: {}
+[8.519267] (-) TimerEvent: {}
+[8.619566] (-) TimerEvent: {}
+[8.719852] (-) TimerEvent: {}
+[8.820137] (-) TimerEvent: {}
+[8.920459] (-) TimerEvent: {}
+[9.020748] (-) TimerEvent: {}
+[9.121064] (-) TimerEvent: {}
+[9.221242] (-) TimerEvent: {}
+[9.321420] (-) TimerEvent: {}
+[9.421592] (-) TimerEvent: {}
+[9.521869] (-) TimerEvent: {}
+[9.622160] (-) TimerEvent: {}
+[9.722449] (-) TimerEvent: {}
+[9.822731] (-) TimerEvent: {}
+[9.923008] (-) TimerEvent: {}
+[10.023296] (-) TimerEvent: {}
+[10.123612] (-) TimerEvent: {}
+[10.223828] (-) TimerEvent: {}
+[10.324036] (-) TimerEvent: {}
+[10.424313] (-) TimerEvent: {}
+[10.524513] (-) TimerEvent: {}
+[10.624689] (-) TimerEvent: {}
+[10.724973] (-) TimerEvent: {}
+[10.825271] (-) TimerEvent: {}
+[10.925521] (-) TimerEvent: {}
+[11.025803] (-) TimerEvent: {}
+[11.126009] (-) TimerEvent: {}
+[11.226289] (-) TimerEvent: {}
+[11.326509] (-) TimerEvent: {}
+[11.426687] (-) TimerEvent: {}
+[11.526897] (-) TimerEvent: {}
+[11.627179] (-) TimerEvent: {}
+[11.727397] (-) TimerEvent: {}
+[11.827678] (-) TimerEvent: {}
+[11.927887] (-) TimerEvent: {}
+[12.028176] (-) TimerEvent: {}
+[12.041013] (kinect_ros2) StdoutLine: {'line': b'[ 50%] Linking CXX shared library libkinect_ros2_component.so\n'}
+[12.128447] (-) TimerEvent: {}
+[12.228796] (-) TimerEvent: {}
+[12.329094] (-) TimerEvent: {}
+[12.429383] (-) TimerEvent: {}
+[12.529575] (-) TimerEvent: {}
+[12.541114] (kinect_ros2) StdoutLine: {'line': b'[ 50%] Built target kinect_ros2_component\n'}
+[12.564024] (kinect_ros2) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o\n'}
+[12.629796] (-) TimerEvent: {}
+[12.730082] (-) TimerEvent: {}
+[12.830383] (-) TimerEvent: {}
+[12.930571] (-) TimerEvent: {}
+[13.030750] (-) TimerEvent: {}
+[13.131036] (-) TimerEvent: {}
+[13.231321] (-) TimerEvent: {}
+[13.331628] (-) TimerEvent: {}
+[13.431805] (-) TimerEvent: {}
+[13.532088] (-) TimerEvent: {}
+[13.632276] (-) TimerEvent: {}
+[13.732464] (-) TimerEvent: {}
+[13.832758] (-) TimerEvent: {}
+[13.933057] (-) TimerEvent: {}
+[14.033366] (-) TimerEvent: {}
+[14.133669] (-) TimerEvent: {}
+[14.233981] (-) TimerEvent: {}
+[14.334284] (-) TimerEvent: {}
+[14.434614] (-) TimerEvent: {}
+[14.534916] (-) TimerEvent: {}
+[14.635208] (-) TimerEvent: {}
+[14.735504] (-) TimerEvent: {}
+[14.835790] (-) TimerEvent: {}
+[14.936087] (-) TimerEvent: {}
+[15.036265] (-) TimerEvent: {}
+[15.136579] (-) TimerEvent: {}
+[15.236875] (-) TimerEvent: {}
+[15.337083] (-) TimerEvent: {}
+[15.437377] (-) TimerEvent: {}
+[15.537563] (-) TimerEvent: {}
+[15.637748] (-) TimerEvent: {}
+[15.737925] (-) TimerEvent: {}
+[15.838135] (-) TimerEvent: {}
+[15.938453] (-) TimerEvent: {}
+[16.038654] (-) TimerEvent: {}
+[16.138949] (-) TimerEvent: {}
+[16.239235] (-) TimerEvent: {}
+[16.339522] (-) TimerEvent: {}
+[16.439722] (-) TimerEvent: {}
+[16.539935] (-) TimerEvent: {}
+[16.640121] (-) TimerEvent: {}
+[16.740373] (-) TimerEvent: {}
+[16.840556] (-) TimerEvent: {}
+[16.940737] (-) TimerEvent: {}
+[17.040950] (-) TimerEvent: {}
+[17.141237] (-) TimerEvent: {}
+[17.241506] (-) TimerEvent: {}
+[17.341686] (-) TimerEvent: {}
+[17.441897] (-) TimerEvent: {}
+[17.542112] (-) TimerEvent: {}
+[17.642404] (-) TimerEvent: {}
+[17.742582] (-) TimerEvent: {}
+[17.842763] (-) TimerEvent: {}
+[17.942982] (-) TimerEvent: {}
+[18.043297] (-) TimerEvent: {}
+[18.143599] (-) TimerEvent: {}
+[18.243798] (-) TimerEvent: {}
+[18.344018] (-) TimerEvent: {}
+[18.444229] (-) TimerEvent: {}
+[18.544566] (-) TimerEvent: {}
+[18.644855] (-) TimerEvent: {}
+[18.745143] (-) TimerEvent: {}
+[18.845443] (-) TimerEvent: {}
+[18.945726] (-) TimerEvent: {}
+[19.046023] (-) TimerEvent: {}
+[19.146303] (-) TimerEvent: {}
+[19.246612] (-) TimerEvent: {}
+[19.346906] (-) TimerEvent: {}
+[19.447194] (-) TimerEvent: {}
+[19.547483] (-) TimerEvent: {}
+[19.647677] (-) TimerEvent: {}
+[19.747894] (-) TimerEvent: {}
+[19.848117] (-) TimerEvent: {}
+[19.948415] (-) TimerEvent: {}
+[20.048711] (-) TimerEvent: {}
+[20.149008] (-) TimerEvent: {}
+[20.249279] (-) TimerEvent: {}
+[20.349514] (-) TimerEvent: {}
+[20.449698] (-) TimerEvent: {}
+[20.549968] (-) TimerEvent: {}
+[20.650179] (-) TimerEvent: {}
+[20.750461] (-) TimerEvent: {}
+[20.850637] (-) TimerEvent: {}
+[20.950846] (-) TimerEvent: {}
+[21.051073] (-) TimerEvent: {}
+[21.151368] (-) TimerEvent: {}
+[21.251543] (-) TimerEvent: {}
+[21.351718] (-) TimerEvent: {}
+[21.451922] (-) TimerEvent: {}
+[21.552200] (-) TimerEvent: {}
+[21.652486] (-) TimerEvent: {}
+[21.752662] (-) TimerEvent: {}
+[21.852868] (-) TimerEvent: {}
+[21.953078] (-) TimerEvent: {}
+[22.053363] (-) TimerEvent: {}
+[22.153545] (-) TimerEvent: {}
+[22.253767] (-) TimerEvent: {}
+[22.286156] (kinect_ros2) StdoutLine: {'line': b'[100%] Linking CXX executable kinect_ros2_node\n'}
+[22.353890] (-) TimerEvent: {}
+[22.454193] (-) TimerEvent: {}
+[22.554473] (-) TimerEvent: {}
+[22.654673] (-) TimerEvent: {}
+[22.754884] (-) TimerEvent: {}
+[22.855214] (-) TimerEvent: {}
+[22.955518] (-) TimerEvent: {}
+[23.055751] (-) TimerEvent: {}
+[23.090043] (kinect_ros2) StdoutLine: {'line': b'[100%] Built target kinect_ros2_node\n'}
+[23.100515] (kinect_ros2) CommandEnded: {'returncode': 0}
+[23.103293] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'install'}
+[23.112396] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2'], 'cwd': '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/nour-mahgoub/Graduation_Rafeeq', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/nour-mahgoub/gradproject/src/rafeeq_description/meshes', 'AI_AGENT': 'claude-code_2-1-139_agent', 'USER': 'nour-mahgoub', 'SNAP_COMMON': '/var/snap/code/common', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'LC_TIME': 'ar_EG.UTF-8', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/238/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'GIO_MODULE_DIR': '/home/nour-mahgoub/snap/code/common/.cache/gio-modules', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLAUDE_AGENT_SDK_VERSION': '0.2.139', 'SNAP_UID': '1000', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/nour-mahgoub/ORB_SLAM3/lib:/usr/local/lib:', 'HOME': '/home/nour-mahgoub', 'CHROME_DESKTOP': 'code.desktop', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32', 'OLDPWD': '/home/nour-mahgoub', 'DESKTOP_SESSION': 'ubuntu', 'SNAP_USER_DATA': '/home/nour-mahgoub/snap/code/238', 'GTK_PATH': '/snap/code/238/usr/lib/x86_64-linux-gnu/gtk-3.0', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-9ed91141-1.11-main.sock', 'GTK_IM_MODULE_FILE': '/home/nour-mahgoub/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'COPILOT_OTEL_FILE_EXPORTER_PATH': '/dev/null', 'MANAGERPID': '2002', 'SYSTEMD_EXEC_PID': '2536', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '238', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3476', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nour-mahgoub', 'SNAP_CONTEXT': '7Hs9-li3yGvBm7W8Eyryw7j389j_bEyTMa5bTLh6fkeVuora53Mj', 'JOURNAL_STREAM': '8:28758', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '8b640eef', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nour-mahgoub', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SNAP_INSTANCE_NAME': 'code', 'FC_FONTATIONS': '1', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/usr/bin:/home/nour-mahgoub/.local/bin:/home/nour-mahgoub/.npm-global/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/nour-mahgoub/.npm-global/bin:/home/nour-mahgoub/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nourmahgoub-Dell-G15-5520:@/tmp/.ICE-unix/2493,unix/nourmahgoub-Dell-G15-5520:/tmp/.ICE-unix/2493', 'GTK_EXE_PREFIX': '/snap/code/238/usr', 'INVOCATION_ID': '4cac268fb1b44b558030966f04d33c69', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'SNAP_DATA': '/var/snap/code/238', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'CLAUDE_EFFORT': 'high', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/238/usr/lib/locale', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XDG_DATA_HOME': '/home/nour-mahgoub/snap/code/238/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KBJ4O3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'COPILOT_OTEL_ENABLED': 'true', 'SNAP_USER_COMMON': '/home/nour-mahgoub/snap/code/common', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nour-mahgoub/snap/code/238/.local/share/glib-2.0/schemas', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SNAP_COOKIE': '7Hs9-li3yGvBm7W8Eyryw7j389j_bEyTMa5bTLh6fkeVuora53Mj', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:c0c82792-f23f-4cf4-a129-0fca0e3acb6b', 'GDK_PIXBUF_MODULEDIR': '/snap/code/238/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'CLAUDE_CODE_SESSION_ID': 'fcc5cb76-d61c-4e72-9ddf-ad91571a5cdd', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/nour-mahgoub/gradproject/src/rafeeq_description/meshes', 'SNAP_NAME': 'code', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'CLAUDECODE': '1', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GDK_PIXBUF_MODULE_FILE': '/home/nour-mahgoub/snap/code/common/.cache/gdk-pixbuf-loaders.cache', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/usr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', 'VSCODE_CLI': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SNAP_REAL_HOME': '/home/nour-mahgoub', 'VSCODE_CODE_CACHE_PATH': '/home/nour-mahgoub/.config/Code/CachedData/8b640eef5a6c6089c029249d48efa5c99adf7d51', 'XDG_DATA_DIRS': '/home/nour-mahgoub/snap/code/238/.local/share:/home/nour-mahgoub/snap/code/238:/snap/code/238/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/nour-mahgoub/.vscode/extensions/anthropic.claude-code-2.1.139-linux-x64/resources/native-binary/claude', 'SNAP_EUID': '1000', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'SNAP': '/snap/code/238', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4530', 'COPILOT_OTEL_EXPORTER_TYPE': 'file'}), 'shell': False}
+[23.119448] (kinect_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.119934] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/libkinect_ros2_component.so\n'}
+[23.123211] (kinect_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/libkinect_ros2_component.so" to ""\n'}
+[23.123658] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node\n'}
+[23.126203] (kinect_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node" to ""\n'}
+[23.126637] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg\n'}
+[23.126771] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml\n'}
+[23.127118] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml\n'}
+[23.127625] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch\n'}
+[23.128393] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py\n'}
+[23.128604] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py\n'}
+[23.128734] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/rviz\n'}
+[23.128862] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/rviz/pointcloud.rviz\n'}
+[23.128985] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2\n'}
+[23.129225] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2\n'}
+[23.129443] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh\n'}
+[23.129639] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv\n'}
+[23.129742] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.sh\n'}
+[23.129954] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.dsv\n'}
+[23.130173] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.bash\n'}
+[23.130557] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.sh\n'}
+[23.131005] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.zsh\n'}
+[23.131458] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.dsv\n'}
+[23.131590] (kinect_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.dsv\n'}
+[23.131818] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2\n'}
+[23.132040] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2\n'}
+[23.132281] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake\n'}
+[23.132547] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake\n'}
+[23.132836] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.xml\n'}
+[23.134620] (kinect_ros2) CommandEnded: {'returncode': 0}
+[23.156222] (-) TimerEvent: {}
+[23.180494] (kinect_ros2) JobEnded: {'identifier': 'kinect_ros2', 'rc': 0}
+[23.181327] (-) EventReactorShutdown: {}

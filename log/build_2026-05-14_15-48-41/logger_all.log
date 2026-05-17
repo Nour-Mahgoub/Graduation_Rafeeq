@@ -1,0 +1,649 @@
+[0.375s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.376s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70572f69a210>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70572f699d00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70572f699d00>>, mixin_verb=('build',))
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.478s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nour-mahgoub/Graduation_Rafeeq'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['colcon_pkg']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'colcon_pkg'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['colcon_meta']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'colcon_meta'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['ros']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ros'
+[0.540s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kinect_ros2' with type 'ros.ament_cmake' and name 'kinect_ros2'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extension 'ignore'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extension 'ignore_ament_install'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extensions ['colcon_pkg']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extension 'colcon_pkg'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extensions ['colcon_meta']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extension 'colcon_meta'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extensions ['ros']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_bringup) by extension 'ros'
+[0.542s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rafeeq_bringup' with type 'ros.ament_cmake' and name 'rafeeq_bringup'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extension 'ignore_ament_install'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extensions ['colcon_pkg']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extension 'colcon_meta'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extensions ['ros']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_description) by extension 'ros'
+[0.544s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rafeeq_description' with type 'ros.ament_python' and name 'rafeeq_description'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extension 'ignore_ament_install'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extensions ['colcon_pkg']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extension 'colcon_pkg'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extensions ['colcon_meta']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extension 'colcon_meta'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extensions ['ros']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_localization) by extension 'ros'
+[0.548s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rafeeq_localization' with type 'ros.ament_cmake' and name 'rafeeq_localization'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extension 'ignore_ament_install'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extensions ['colcon_pkg']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extension 'colcon_pkg'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extensions ['colcon_meta']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_navigation) by extension 'ros'
+[0.550s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rafeeq_navigation' with type 'ros.ament_cmake' and name 'rafeeq_navigation'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/rafeeq_speech) by extension 'ros'
+[0.552s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rafeeq_speech' with type 'ros.ament_cmake' and name 'rafeeq_speech'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extension 'colcon_pkg'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extensions ['colcon_meta']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extension 'colcon_meta'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extensions ['ros']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_node) by extension 'ros'
+[0.554s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_node' with type 'ros.ament_python' and name 'serial_node'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.556s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.560s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.609s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/nour-mahgoub/Graduation_Rafeeq/install
+[0.614s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 460 installed packages in /opt/ros/jazzy
+[0.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.723s] DEBUG:colcon.colcon_core.verb:Building package 'kinect_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'rafeeq_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_target' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'rafeeq_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description', 'symlink_install': False, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_target' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.725s] DEBUG:colcon.colcon_core.verb:Building package 'rafeeq_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization', 'symlink_install': False, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'rafeeq_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_clean_cache' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'rafeeq_speech' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'rafeeq_speech' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech', 'symlink_install': False, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'serial_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'serial_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node', 'symlink_install': False, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.729s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.729s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam', 'merge_install': False, 'path': '/home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam', 'symlink_install': False, 'test_result_base': None}
+[0.730s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.731s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.731s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2' with build type 'ament_cmake'
+[0.732s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2'
+[0.744s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.744s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.744s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.754s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_bringup' with build type 'ament_cmake'
+[0.754s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_bringup'
+[0.754s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.754s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.764s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description' with build type 'ament_python'
+[0.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_description', 'ament_prefix_path')
+[0.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/ament_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/ament_prefix_path.dsv'
+[0.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/ament_prefix_path.sh'
+[0.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.780s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization' with build type 'ament_cmake'
+[0.780s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_localization'
+[0.781s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.781s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.794s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation' with build type 'ament_cmake'
+[0.794s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_navigation'
+[0.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.809s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech' with build type 'ament_cmake'
+[0.809s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech'
+[0.810s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.810s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.824s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node' with build type 'ament_python'
+[0.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_node', 'ament_prefix_path')
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/ament_prefix_path.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/ament_prefix_path.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/ament_prefix_path.sh'
+[0.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/sllidar_ros2' with build type 'ament_cmake'
+[0.848s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/sllidar_ros2'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.866s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam' with build type 'ament_cmake'
+[0.866s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam'
+[0.867s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.867s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2 -- -j20 -l20
+[0.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup -- -j20 -l20
+[1.418s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description'
+[1.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization -- -j20 -l20
+[1.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[1.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech -- -j20 -l20
+[1.920s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node'
+[1.921s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.921s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2 -- -j20 -l20
+[1.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam -- -j20 -l20
+[1.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2 -- -j20 -l20
+[1.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2
+[1.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup -- -j20 -l20
+[1.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup
+[1.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization -- -j20 -l20
+[1.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization
+[1.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation -- -j20 -l20
+[1.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation
+[1.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech -- -j20 -l20
+[1.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech
+[2.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_bringup)
+[2.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup' for CMake module files
+[2.053s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup' for CMake config files
+[2.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_bringup', 'cmake_prefix_path')
+[2.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.ps1'
+[2.055s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.dsv'
+[2.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.sh'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/bin'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/lib/pkgconfig/rafeeq_bringup.pc'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/lib/python3.12/site-packages'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/bin'
+[2.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.ps1'
+[2.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.dsv'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.sh'
+[2.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.bash'
+[2.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.zsh'
+[2.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/colcon-core/packages/rafeeq_bringup)
+[2.064s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_bringup)
+[2.064s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup' for CMake module files
+[2.064s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup' for CMake config files
+[2.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_bringup', 'cmake_prefix_path')
+[2.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.ps1'
+[2.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.dsv'
+[2.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/hook/cmake_prefix_path.sh'
+[2.066s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/bin'
+[2.066s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/lib/pkgconfig/rafeeq_bringup.pc'
+[2.066s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/lib/python3.12/site-packages'
+[2.067s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/bin'
+[2.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.ps1'
+[2.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.dsv'
+[2.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.sh'
+[2.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.bash'
+[2.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/package.zsh'
+[2.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/colcon-core/packages/rafeeq_bringup)
+[2.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_localization)
+[2.069s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization' for CMake module files
+[2.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization
+[2.071s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization' for CMake config files
+[2.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_localization', 'cmake_prefix_path')
+[2.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.ps1'
+[2.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.dsv'
+[2.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.sh'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/bin'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/lib/pkgconfig/rafeeq_localization.pc'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/lib/python3.12/site-packages'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/bin'
+[2.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.ps1'
+[2.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.dsv'
+[2.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.sh'
+[2.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.bash'
+[2.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.zsh'
+[2.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/colcon-core/packages/rafeeq_localization)
+[2.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_localization)
+[2.077s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization' for CMake module files
+[2.077s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization' for CMake config files
+[2.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_localization', 'cmake_prefix_path')
+[2.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.ps1'
+[2.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.dsv'
+[2.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/hook/cmake_prefix_path.sh'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/bin'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/lib/pkgconfig/rafeeq_localization.pc'
+[2.080s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/lib/python3.12/site-packages'
+[2.080s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/bin'
+[2.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.ps1'
+[2.081s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.dsv'
+[2.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.sh'
+[2.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.bash'
+[2.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.zsh'
+[2.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/colcon-core/packages/rafeeq_localization)
+[2.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinect_ros2)
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2' for CMake module files
+[2.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2
+[2.084s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2' for CMake config files
+[2.085s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'cmake_prefix_path')
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.ps1'
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.dsv'
+[2.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.sh'
+[2.086s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib'
+[2.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'ld_library_path_lib')
+[2.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.ps1'
+[2.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.dsv'
+[2.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.sh'
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/bin'
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/pkgconfig/kinect_ros2.pc'
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/python3.12/site-packages'
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/bin'
+[2.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.ps1'
+[2.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.dsv'
+[2.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.sh'
+[2.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.bash'
+[2.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.zsh'
+[2.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/colcon-core/packages/kinect_ros2)
+[2.092s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinect_ros2)
+[2.092s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2' for CMake module files
+[2.092s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2' for CMake config files
+[2.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'cmake_prefix_path')
+[2.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.ps1'
+[2.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.dsv'
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.sh'
+[2.094s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib'
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'ld_library_path_lib')
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.ps1'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.dsv'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.sh'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/bin'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/pkgconfig/kinect_ros2.pc'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/python3.12/site-packages'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/bin'
+[2.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.ps1'
+[2.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.dsv'
+[2.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.sh'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.bash'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.zsh'
+[2.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/colcon-core/packages/kinect_ros2)
+[2.099s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_navigation)
+[2.099s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation' for CMake module files
+[2.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_navigation
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation' for CMake config files
+[2.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_navigation', 'cmake_prefix_path')
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.ps1'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.dsv'
+[2.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.sh'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/bin'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/lib/pkgconfig/rafeeq_navigation.pc'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/lib/python3.12/site-packages'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/bin'
+[2.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.ps1'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.dsv'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.sh'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.bash'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.zsh'
+[2.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/colcon-core/packages/rafeeq_navigation)
+[2.106s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_navigation)
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation' for CMake module files
+[2.107s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation' for CMake config files
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_navigation', 'cmake_prefix_path')
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.ps1'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.dsv'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/hook/cmake_prefix_path.sh'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/bin'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/lib/pkgconfig/rafeeq_navigation.pc'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/lib/python3.12/site-packages'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/bin'
+[2.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.ps1'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.dsv'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.sh'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.bash'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/package.zsh'
+[2.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/colcon-core/packages/rafeeq_navigation)
+[2.112s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_speech)
+[2.112s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech' for CMake module files
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech
+[2.114s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech' for CMake config files
+[2.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_speech', 'cmake_prefix_path')
+[2.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.ps1'
+[2.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.dsv'
+[2.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.sh'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/bin'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/pkgconfig/rafeeq_speech.pc'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/python3.12/site-packages'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/bin'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.ps1'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.dsv'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.sh'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.bash'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.zsh'
+[2.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/colcon-core/packages/rafeeq_speech)
+[2.119s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_speech)
+[2.119s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech' for CMake module files
+[2.120s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech' for CMake config files
+[2.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_speech', 'cmake_prefix_path')
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.ps1'
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.dsv'
+[2.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/hook/cmake_prefix_path.sh'
+[2.121s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib'
+[2.121s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/bin'
+[2.121s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/pkgconfig/rafeeq_speech.pc'
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/python3.12/site-packages'
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/bin'
+[2.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.ps1'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.dsv'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.sh'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.bash'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.zsh'
+[2.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/colcon-core/packages/rafeeq_speech)
+[2.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam -- -j20 -l20
+[2.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam
+[2.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2 -- -j20 -l20
+[2.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2
+[2.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[2.143s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2' for CMake module files
+[2.144s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2' for CMake config files
+[2.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[2.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/bin'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib/python3.12/site-packages'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/bin'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[2.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[2.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[2.153s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[2.155s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2' for CMake module files
+[2.158s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2' for CMake config files
+[2.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/sllidar_ros2
+[2.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[2.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[2.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/bin'
+[2.166s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[2.166s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/lib/python3.12/site-packages'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/bin'
+[2.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[2.169s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[2.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[2.173s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[2.174s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam' for CMake module files
+[2.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam' for CMake config files
+[2.177s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[2.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[2.178s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[2.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[2.180s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib'
+[2.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[2.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[2.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[2.182s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/bin'
+[2.182s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[2.183s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/python3.12/site-packages'
+[2.184s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/bin'
+[2.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.ps1'
+[2.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.dsv'
+[2.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.sh'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.bash'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.zsh'
+[2.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/colcon-core/packages/usb_cam)
+[2.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[2.190s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam' for CMake module files
+[2.191s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam' for CMake config files
+[2.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[2.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[2.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[2.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[2.194s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib'
+[2.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[2.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[2.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[2.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[2.196s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/bin'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/python3.12/site-packages'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/bin'
+[2.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.ps1'
+[2.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.dsv'
+[2.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.sh'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.bash'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.zsh'
+[2.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/colcon-core/packages/usb_cam)
+[3.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data
+[3.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_node build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/install.log --single-version-externally-managed install_data
+[4.402s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node' for CMake module files
+[4.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/src/serial_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_node build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/install.log --single-version-externally-managed install_data
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node' for CMake config files
+[4.406s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib'
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/bin'
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/pkgconfig/serial_node.pc'
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages'
+[4.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_node', 'pythonpath')
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/pythonpath.ps1'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/pythonpath.dsv'
+[4.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/hook/pythonpath.sh'
+[4.410s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/bin'
+[4.411s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_node)
+[4.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/package.ps1'
+[4.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/package.dsv'
+[4.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/package.sh'
+[4.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/package.bash'
+[4.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node/package.zsh'
+[4.415s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/colcon-core/packages/serial_node)
+[4.416s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description' for CMake module files
+[4.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data
+[4.418s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description' for CMake config files
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib'
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/bin'
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/pkgconfig/rafeeq_description.pc'
+[4.424s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages'
+[4.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('rafeeq_description', 'pythonpath')
+[4.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/pythonpath.ps1'
+[4.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/pythonpath.dsv'
+[4.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/hook/pythonpath.sh'
+[4.427s] Level 1:colcon.colcon_core.environment:checking '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/bin'
+[4.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rafeeq_description)
+[4.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/package.ps1'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/package.dsv'
+[4.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/package.sh'
+[4.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/package.bash'
+[4.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/package.zsh'
+[4.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/colcon-core/packages/rafeeq_description)
+[4.434s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.434s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.435s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.435s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.450s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.471s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.472s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nour-mahgoub/Graduation_Rafeeq/install/local_setup.ps1'
+[4.473s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nour-mahgoub/Graduation_Rafeeq/install/_local_setup_util_ps1.py'
+[4.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nour-mahgoub/Graduation_Rafeeq/install/setup.ps1'
+[4.480s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nour-mahgoub/Graduation_Rafeeq/install/local_setup.sh'
+[4.481s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nour-mahgoub/Graduation_Rafeeq/install/_local_setup_util_sh.py'
+[4.483s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nour-mahgoub/Graduation_Rafeeq/install/setup.sh'
+[4.486s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nour-mahgoub/Graduation_Rafeeq/install/local_setup.bash'
+[4.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nour-mahgoub/Graduation_Rafeeq/install/setup.bash'
+[4.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nour-mahgoub/Graduation_Rafeeq/install/local_setup.zsh'
+[4.492s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nour-mahgoub/Graduation_Rafeeq/install/setup.zsh'

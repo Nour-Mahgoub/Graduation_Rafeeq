@@ -1,0 +1,1 @@
+/home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam/scripts/show_image.py

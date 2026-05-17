@@ -1,0 +1,1 @@
+/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2/ament_cmake_environment_hooks/local_setup.sh

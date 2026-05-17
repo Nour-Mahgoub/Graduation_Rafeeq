@@ -1,0 +1,110 @@
+[0.360s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam
+[0.363s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.363s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.363s]   CMake.
+[0.364s] 
+[0.364s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.364s]   to tell CMake that the project requires at least <min> but has been updated
+[0.364s]   to work with policies introduced by <max> or earlier.
+[0.364s] 
+[0.364s] [0m
+[0.370s] -- Found ament_cmake_auto: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.553s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.688s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.699s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.728s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.801s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.802s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.822s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.947s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[0.978s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.012s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.025s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.032s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.033s] [0mCMake Deprecation Warning at /opt/ros/jazzy/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[1.033s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.033s]   CMake.
+[1.033s] 
+[1.033s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.033s]   to tell CMake that the project requires at least <min> but has been updated
+[1.033s]   to work with policies introduced by <max> or earlier.
+[1.033s] 
+[1.033s] [0m
+[1.037s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/usb_cam` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.039s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.042s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.042s] -- Configured cppcheck include dirs: /home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam/include
+[1.042s] -- Configured cppcheck exclude dirs and/or files: 
+[1.045s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.045s] -- Configured cpplint exclude dirs and/or files: 
+[1.045s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.045s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.046s] -- Added test 'lint_cmake' to check CMake code style
+[1.046s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.049s] -- Added test 'uncrustify' to check C / C++ code style
+[1.049s] -- Configured uncrustify additional arguments: 
+[1.049s] -- Added test 'xmllint' to check XML markup files
+[1.050s] -- Configuring done (0.7s)
+[1.076s] -- Generating done (0.0s)
+[1.103s] -- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam
+[1.110s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam
+[1.110s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam -- -j20 -l20
+[1.137s] [ 14%] Built target gtest
+[1.137s] [ 28%] Built target usb_cam
+[1.138s] [ 42%] Built target gtest_main
+[1.143s] [ 57%] Built target usb_cam_node_exe
+[1.149s] [ 71%] Built target test_pixel_formats
+[1.152s] [ 85%] Built target test_usb_cam_utils
+[1.160s] [100%] Built target usb_cam_node
+[1.165s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam -- -j20 -l20
+[1.174s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam
+[1.177s] -- Install configuration: ""
+[1.178s] -- Execute custom install script
+[1.178s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/library_path.sh
+[1.178s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[1.178s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[1.178s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/usb_cam/show_image.py
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/libusb_cam.so
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/libusb_cam_node.so
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/constants.hpp
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/conversions.hpp
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/m420.hpp
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[1.179s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/mono.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/utils.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/usb_cam.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/include/usb_cam/utils.hpp
+[1.180s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/lib/libusb_cam_node.so
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/launch/__init__.py
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/launch/camera_config.py
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/config/params_1.yaml
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/config/params_2.yaml
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[1.181s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/path.sh
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/environment/path.dsv
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/local_setup.bash
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/local_setup.sh
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/local_setup.zsh
+[1.182s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/local_setup.dsv
+[1.182s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.dsv
+[1.186s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[1.186s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[1.186s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[1.186s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.186s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.187s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[1.187s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[1.187s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/usb_cam/share/usb_cam/package.xml
+[1.188s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/usb_cam

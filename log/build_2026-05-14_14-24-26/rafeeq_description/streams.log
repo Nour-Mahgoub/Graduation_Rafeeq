@@ -1,0 +1,35 @@
+[0.836s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build --no-deps symlink_data --force
+[1.055s] running develop
+[1.186s] running egg_info
+[1.199s] writing rafeeq_description.egg-info/PKG-INFO
+[1.199s] writing dependency_links to rafeeq_description.egg-info/dependency_links.txt
+[1.200s] writing entry points to rafeeq_description.egg-info/entry_points.txt
+[1.200s] writing requirements to rafeeq_description.egg-info/requires.txt
+[1.200s] writing top-level names to rafeeq_description.egg-info/top_level.txt
+[1.228s] reading manifest file 'rafeeq_description.egg-info/SOURCES.txt'
+[1.229s] writing manifest file 'rafeeq_description.egg-info/SOURCES.txt'
+[1.244s] running build_ext
+[1.244s] Creating /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq-description.egg-link (link to .)
+[1.245s] Installing scan_relay script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.245s] Installing teleop_keyboard script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.245s] 
+[1.245s] Installed /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description
+[1.245s] running symlink_data
+[1.245s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/resource/rafeeq_description -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/ament_index/resource_index/packages
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/package.xml -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/launch/view_robot.launch -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/launch
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/launch/gazebo.launch.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/launch
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/urdf/robot_description.urdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/urdf
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/rviz/default_view.rviz -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/rviz
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/LeftMotor.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/base_link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/Lidar_Link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.246s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/LeftWingWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/Camera_Link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/RightMotor.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/BackRightWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/RightWingWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/meshes/BackLeftWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/world/world.world -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/world
+[1.247s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/world/world.sdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/world
+[1.285s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build --no-deps symlink_data --force

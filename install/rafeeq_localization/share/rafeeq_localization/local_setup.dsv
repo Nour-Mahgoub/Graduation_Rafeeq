@@ -1,2 +1,1 @@
-source;share/rafeeq_localization/environment/ament_prefix_path.sh
-source;share/rafeeq_localization/environment/path.sh
+/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization/ament_cmake_environment_hooks/local_setup.dsv

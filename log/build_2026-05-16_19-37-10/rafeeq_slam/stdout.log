@@ -1,0 +1,32 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_slam
+-- Install configuration: ""
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//launch
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//launch/slam.launch.py
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//config
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//config/rviz_config.yaml
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//config/slam_param_config.yaml
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam//maps
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/ament_index/resource_index/package_run_dependencies/rafeeq_slam
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/ament_index/resource_index/parent_prefix_path/rafeeq_slam
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/environment/path.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/environment/path.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/local_setup.bash
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/local_setup.sh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/local_setup.zsh
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/local_setup.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/package.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/ament_index/resource_index/packages/rafeeq_slam
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/cmake/rafeeq_slamConfig.cmake
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/cmake/rafeeq_slamConfig-version.cmake
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_slam/share/rafeeq_slam/package.xml

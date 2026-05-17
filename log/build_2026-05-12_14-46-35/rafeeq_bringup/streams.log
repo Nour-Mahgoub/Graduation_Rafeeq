@@ -1,0 +1,21 @@
+[0.031s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nour-mahgoub/Graduation_Rafeeq/install/view_robot_pkg:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/ rafeeq_bringup -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup
+[0.180s] -- The C compiler identification is GNU 13.3.0
+[0.234s] -- The CXX compiler identification is GNU 13.3.0
+[0.243s] -- Detecting C compiler ABI info
+[0.299s] -- Detecting C compiler ABI info - done
+[0.315s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.316s] -- Detecting C compile features
+[0.316s] -- Detecting C compile features - done
+[0.328s] -- Detecting CXX compiler ABI info
+[0.392s] -- Detecting CXX compiler ABI info - done
+[0.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.410s] -- Detecting CXX compile features
+[0.411s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.737s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[0.894s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.025s] -- Added test 'lint_cmake' to check CMake code style
+[1.026s] -- Added test 'xmllint' to check XML markup files
+[1.028s] -- Configuring done (1.0s)
+[1.032s] -- Generating done (0.0s)
+[1.033s] -- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_bringup

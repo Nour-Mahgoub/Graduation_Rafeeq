@@ -1,0 +1,49 @@
+[1.579s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build
+[1.972s] running develop
+[2.231s] Removing /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq-description.egg-link (link to .)
+[2.271s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build
+[2.272s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data --force
+[2.602s] running egg_info
+[2.626s] writing ../../build/rafeeq_description/rafeeq_description.egg-info/PKG-INFO
+[2.626s] writing dependency_links to ../../build/rafeeq_description/rafeeq_description.egg-info/dependency_links.txt
+[2.626s] writing entry points to ../../build/rafeeq_description/rafeeq_description.egg-info/entry_points.txt
+[2.626s] writing requirements to ../../build/rafeeq_description/rafeeq_description.egg-info/requires.txt
+[2.626s] writing top-level names to ../../build/rafeeq_description/rafeeq_description.egg-info/top_level.txt
+[2.674s] reading manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+[2.675s] writing manifest file '../../build/rafeeq_description/rafeeq_description.egg-info/SOURCES.txt'
+[2.675s] running build
+[2.675s] running build_py
+[2.675s] running install
+[2.683s] running install_lib
+[2.707s] creating /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+[2.707s] copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/__init__.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+[2.708s] copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/teleop_keyboard.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+[2.708s] copying /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build/lib/rafeeq_description/scan_relay.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description
+[2.709s] byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/__init__.py to __init__.cpython-312.pyc
+[2.709s] byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/teleop_keyboard.py to teleop_keyboard.cpython-312.pyc
+[2.710s] byte-compiling /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description/scan_relay.py to scan_relay.cpython-312.pyc
+[2.710s] running install_data
+[2.711s] copying resource/rafeeq_description -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/ament_index/resource_index/packages
+[2.711s] copying package.xml -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description
+[2.711s] copying launch/view_robot.launch -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/launch
+[2.711s] copying launch/gazebo.launch.py -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/launch
+[2.711s] copying urdf/robot_description.urdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/urdf
+[2.712s] copying rviz/default_view.rviz -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/rviz
+[2.712s] copying meshes/LeftMotor.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.713s] copying meshes/base_link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.715s] copying meshes/Lidar_Link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.716s] copying meshes/LeftWingWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.717s] copying meshes/Camera_Link.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.721s] copying meshes/RightMotor.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.723s] copying meshes/BackRightWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.723s] copying meshes/RightWingWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.725s] copying meshes/BackLeftWheel.STL -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/meshes
+[2.725s] copying world/world.world -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/world
+[2.726s] copying world/world.sdf -> /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/share/rafeeq_description/world
+[2.726s] running install_egg_info
+[2.751s] Copying ../../build/rafeeq_description/rafeeq_description.egg-info to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq_description-0.0.0-py3.12.egg-info
+[2.752s] running install_scripts
+[2.905s] Installing scan_relay script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[2.905s] Installing teleop_keyboard script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[2.905s] writing list of installed files to '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log'
+[2.935s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rafeeq_description build --build-base /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build install --record /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/install.log --single-version-externally-managed install_data --force

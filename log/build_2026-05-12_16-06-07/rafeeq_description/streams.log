@@ -1,0 +1,18 @@
+[1.132s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build --no-deps symlink_data
+[1.483s] running develop
+[1.722s] running egg_info
+[1.745s] writing rafeeq_description.egg-info/PKG-INFO
+[1.745s] writing dependency_links to rafeeq_description.egg-info/dependency_links.txt
+[1.745s] writing entry points to rafeeq_description.egg-info/entry_points.txt
+[1.745s] writing requirements to rafeeq_description.egg-info/requires.txt
+[1.745s] writing top-level names to rafeeq_description.egg-info/top_level.txt
+[1.791s] reading manifest file 'rafeeq_description.egg-info/SOURCES.txt'
+[1.792s] writing manifest file 'rafeeq_description.egg-info/SOURCES.txt'
+[1.816s] running build_ext
+[1.816s] Creating /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages/rafeeq-description.egg-link (link to .)
+[1.817s] Installing scan_relay script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.817s] Installing teleop_keyboard script to /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/rafeeq_description
+[1.817s] 
+[1.817s] Installed /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description
+[1.817s] running symlink_data
+[1.847s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_description/build --no-deps symlink_data

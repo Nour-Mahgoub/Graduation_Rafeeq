@@ -49,12 +49,11 @@ def generate_launch_description():
                 '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
                 '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
                 '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
-                '/model/rafeeq/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
                 '/world/default/model/rafeeq/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model',
             ],
             remappings=[
-                ('/model/rafeeq/tf', '/tf'),
                 ('/world/default/model/rafeeq/joint_state', '/joint_states'),
+                ('/scan', '/scan_raw'),
             ],
             output='screen'
         ),
@@ -63,24 +62,6 @@ def generate_launch_description():
         Node(
             package='rafeeq_description',
             executable='scan_relay',
-            output='screen'
-        ),
-
-        # Stitch Ignition scoped TF tree to ROS2 unscoped TF tree
-        # odom -> rafeeq/odom (so RViz fixed frame "odom" works)
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            arguments=['0', '0', '0', '0', '0', '0', 'odom', 'rafeeq/odom'],
-            parameters=[{'use_sim_time': True}],
-            output='screen'
-        ),
-        # rafeeq/base_link -> base_link (connects Ignition pose to robot_state_publisher tree)
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            arguments=['0', '0', '0', '0', '0', '0', 'rafeeq/base_link', 'base_link'],
-            parameters=[{'use_sim_time': True}],
             output='screen'
         ),
 
@@ -94,7 +75,7 @@ def generate_launch_description():
                         '-world', 'default',
                         '-string', robot_description_ign,
                         '-name', 'rafeeq',
-                        '-x', '0', '-y', '0', '-z', '0.456',
+                        '-x', '0', '-y', '0', '-z', '0.01',
                     ],
                     output='screen'
                 ),

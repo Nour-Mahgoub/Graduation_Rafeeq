@@ -1,0 +1,35 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found robot_localization: 3.8.3 (/opt/ros/jazzy/share/robot_localization/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_localization
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/config/ekf.yaml
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/launch/ekf_gazebo.launch.py
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/ament_index/resource_index/package_run_dependencies/rafeeq_localization
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/ament_index/resource_index/parent_prefix_path/rafeeq_localization
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/environment/ament_prefix_path.sh
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/environment/ament_prefix_path.dsv
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/environment/path.sh
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/environment/path.dsv
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/local_setup.bash
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/local_setup.sh
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/local_setup.zsh
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/local_setup.dsv
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.dsv
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/ament_index/resource_index/packages/rafeeq_localization
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/cmake/rafeeq_localizationConfig.cmake
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/cmake/rafeeq_localizationConfig-version.cmake
+-- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_localization/share/rafeeq_localization/package.xml

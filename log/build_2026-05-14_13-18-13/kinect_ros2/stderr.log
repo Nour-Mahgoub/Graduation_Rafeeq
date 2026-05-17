@@ -1,0 +1,17 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+In file included from [01m[K/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/src/kinect_ros2_component.cpp:1[m[K:
+[01m[K/home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+   12 | #include [01;31m[K"cv_bridge/cv_bridge.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/kinect_ros2_component.dir/build.make:79: CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/kinect_ros2_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

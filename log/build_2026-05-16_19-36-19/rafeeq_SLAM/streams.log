@@ -1,0 +1,61 @@
+[0.043s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_SLAM -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM
+[0.340s] -- The C compiler identification is GNU 13.3.0
+[0.340s] -- The CXX compiler identification is GNU 13.3.0
+[0.340s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.340s] -- Detecting C compile features
+[0.340s] -- Detecting C compile features - done
+[0.340s] -- Detecting CXX compiler ABI info
+[0.340s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.340s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.340s]   CMake.
+[0.340s] 
+[0.340s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.341s]   to tell CMake that the project requires at least <min> but has been updated
+[0.341s]   to work with policies introduced by <max> or earlier.
+[0.341s] 
+[0.341s] [0m
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.398s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.398s] -- Detecting CXX compile features
+[0.400s] -- Detecting CXX compile features - done
+[0.414s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.675s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[0.817s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.887s] WARNING: Package name "rafeeq_SLAM" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.938s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.938s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.939s] -- Added test 'lint_cmake' to check CMake code style
+[0.940s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.941s] -- Added test 'xmllint' to check XML markup files
+[0.943s] -- Configuring done (0.9s)
+[0.947s] -- Generating done (0.0s)
+[0.948s] -- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM
+[0.952s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_SLAM -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM
+[0.952s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM -- -j20 -l20
+[0.968s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM -- -j20 -l20
+[0.969s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM
+[0.972s] -- Install configuration: ""
+[0.972s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//launch
+[0.972s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//launch/slam.launch.py
+[0.972s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//config
+[0.972s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//config/rviz_config.yaml
+[0.972s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//config/slam_param_config.yaml
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM//maps
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/ament_index/resource_index/package_run_dependencies/rafeeq_SLAM
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/ament_index/resource_index/parent_prefix_path/rafeeq_SLAM
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/environment/ament_prefix_path.sh
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/environment/ament_prefix_path.dsv
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/environment/path.sh
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/environment/path.dsv
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/local_setup.bash
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/local_setup.sh
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/local_setup.zsh
+[0.973s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/local_setup.dsv
+[0.974s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/package.dsv
+[0.974s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/ament_index/resource_index/packages/rafeeq_SLAM
+[0.974s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/cmake/rafeeq_SLAMConfig.cmake
+[0.974s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/cmake/rafeeq_SLAMConfig-version.cmake
+[0.974s] -- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_SLAM/share/rafeeq_SLAM/package.xml
+[0.975s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_SLAM

@@ -1,0 +1,57 @@
+[0.041s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2
+[0.424s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.425s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.425s] -- Found rclcpp_components: 28.1.18 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[0.425s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.425s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.425s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.425s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.425s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.425s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.425s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.442s] -- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.484s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.487s] -- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+[0.494s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.494s] -- Found depth_image_proc: 5.0.11 (/opt/ros/jazzy/share/depth_image_proc/cmake)
+[0.500s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[0.512s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.514s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.608s] -- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+[0.733s] -- Configuring done (0.7s)
+[0.756s] -- Generating done (0.0s)
+[0.793s] -- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2
+[0.800s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nour-mahgoub/Graduation_Rafeeq/src/kinect_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2
+[0.801s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2 -- -j20 -l20
+[0.841s] [ 25%] [1m[32mLinking CXX shared library libkinect_ros2_component.so[0m
+[0.974s] [ 50%] Built target kinect_ros2_component
+[0.999s] [ 75%] [1m[32mLinking CXX executable kinect_ros2_node[0m
+[1.322s] [100%] Built target kinect_ros2_node
+[1.328s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2 -- -j20 -l20
+[1.329s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2
+[1.332s] -- Install configuration: ""
+[1.332s] -- Execute custom install script
+[1.332s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/libkinect_ros2_component.so
+[1.336s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node
+[1.341s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml
+[1.344s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml
+[1.348s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py
+[1.351s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py
+[1.355s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/rviz/pointcloud.rviz
+[1.359s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2
+[1.363s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2
+[1.366s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh
+[1.370s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv
+[1.374s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.sh
+[1.378s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.dsv
+[1.381s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.bash
+[1.385s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.sh
+[1.389s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.zsh
+[1.392s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.dsv
+[1.396s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.dsv
+[1.399s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2
+[1.403s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2
+[1.406s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake
+[1.410s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake
+[1.414s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.xml
+[1.419s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2

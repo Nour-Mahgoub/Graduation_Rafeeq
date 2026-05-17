@@ -30,7 +30,7 @@ def generate_launch_description():
         LaunchDescription: A complete launch description for the EKF node
     """
     # Constants for paths to different files and folders
-    package_name = 'yahboom_rosmaster_localization'
+    package_name = 'rafeeq_localization'
  
     # Config file paths
     ekf_config_file_path = 'config/ekf.yaml'

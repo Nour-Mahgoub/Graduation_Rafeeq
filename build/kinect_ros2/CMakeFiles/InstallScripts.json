@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

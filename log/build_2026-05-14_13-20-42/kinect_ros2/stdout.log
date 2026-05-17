@@ -1,0 +1,56 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp_components: 28.1.18 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Found depth_image_proc: 5.0.11 (/opt/ros/jazzy/share/depth_image_proc/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+-- Configuring done (1.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/nour-mahgoub/Graduation_Rafeeq/build/kinect_ros2
+[ 25%] Building CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o
+[ 50%] Linking CXX shared library libkinect_ros2_component.so
+[ 50%] Built target kinect_ros2_component
+[ 75%] Building CXX object CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o
+[100%] Linking CXX executable kinect_ros2_node
+[100%] Built target kinect_ros2_node
+-- Install configuration: ""
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/libkinect_ros2_component.so
+-- Set non-toolchain portion of runtime path of "/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/libkinect_ros2_component.so" to ""
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node
+-- Set non-toolchain portion of runtime path of "/home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node" to ""
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/rviz
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/rviz/pointcloud.rviz
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.sh
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/environment/path.dsv
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.bash
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.sh
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.zsh
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/local_setup.dsv
+-- Up-to-date: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.dsv
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake
+-- Installing: /home/nour-mahgoub/Graduation_Rafeeq/install/kinect_ros2/share/kinect_ros2/package.xml

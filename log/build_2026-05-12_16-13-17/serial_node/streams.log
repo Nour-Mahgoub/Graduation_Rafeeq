@@ -1,0 +1,17 @@
+[1.138s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build --no-deps symlink_data
+[1.493s] running develop
+[1.731s] running egg_info
+[1.754s] writing serial_node.egg-info/PKG-INFO
+[1.754s] writing dependency_links to serial_node.egg-info/dependency_links.txt
+[1.754s] writing entry points to serial_node.egg-info/entry_points.txt
+[1.754s] writing requirements to serial_node.egg-info/requires.txt
+[1.754s] writing top-level names to serial_node.egg-info/top_level.txt
+[1.802s] reading manifest file 'serial_node.egg-info/SOURCES.txt'
+[1.802s] writing manifest file 'serial_node.egg-info/SOURCES.txt'
+[1.827s] running build_ext
+[1.827s] Creating /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages/serial-node.egg-link (link to .)
+[1.828s] Installing serial_bridge script to /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/serial_node
+[1.828s] 
+[1.828s] Installed /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node
+[1.828s] running symlink_data
+[1.857s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build --no-deps symlink_data

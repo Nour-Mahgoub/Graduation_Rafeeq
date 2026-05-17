@@ -1,0 +1,25 @@
+[0.518s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech -- -j20 -l20
+[1.002s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech -- -j20 -l20
+[1.003s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech
+[1.025s] -- Install configuration: ""
+[1.025s] -- Execute custom install script
+[1.028s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/lib/rafeeq_speech/speech_node.py
+[1.028s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/launch/speech_recognition.launch.py
+[1.028s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/labels.txt
+[1.029s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/rafeeq_model.tflite
+[1.029s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/package_run_dependencies/rafeeq_speech
+[1.029s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/parent_prefix_path/rafeeq_speech
+[1.030s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/ament_prefix_path.sh
+[1.030s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/ament_prefix_path.dsv
+[1.030s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/path.sh
+[1.030s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/path.dsv
+[1.030s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.bash
+[1.031s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.sh
+[1.031s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.zsh
+[1.031s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/local_setup.dsv
+[1.031s] -- Symlinking: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.dsv
+[1.032s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/packages/rafeeq_speech
+[1.032s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/cmake/rafeeq_speechConfig.cmake
+[1.032s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/cmake/rafeeq_speechConfig-version.cmake
+[1.032s] -- Up-to-date symlink: /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/package.xml
+[1.114s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech

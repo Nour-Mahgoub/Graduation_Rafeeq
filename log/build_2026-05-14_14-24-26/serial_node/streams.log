@@ -1,0 +1,19 @@
+[0.853s] Invoking command in '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build --no-deps symlink_data --force
+[1.263s] running develop
+[1.504s] running egg_info
+[1.527s] writing serial_node.egg-info/PKG-INFO
+[1.528s] writing dependency_links to serial_node.egg-info/dependency_links.txt
+[1.528s] writing entry points to serial_node.egg-info/entry_points.txt
+[1.528s] writing requirements to serial_node.egg-info/requires.txt
+[1.528s] writing top-level names to serial_node.egg-info/top_level.txt
+[1.580s] reading manifest file 'serial_node.egg-info/SOURCES.txt'
+[1.581s] writing manifest file 'serial_node.egg-info/SOURCES.txt'
+[1.608s] running build_ext
+[1.609s] Creating /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages/serial-node.egg-link (link to .)
+[1.609s] Installing serial_bridge script to /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/serial_node
+[1.609s] 
+[1.609s] Installed /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node
+[1.609s] running symlink_data
+[1.609s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/resource/serial_node -> /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/ament_index/resource_index/packages
+[1.610s] symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/package.xml -> /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node
+[1.638s] Invoked command in '/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/build --no-deps symlink_data --force

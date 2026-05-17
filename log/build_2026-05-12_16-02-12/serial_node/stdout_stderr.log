@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing serial_node.egg-info/PKG-INFO
+writing dependency_links to serial_node.egg-info/dependency_links.txt
+writing entry points to serial_node.egg-info/entry_points.txt
+writing requirements to serial_node.egg-info/requires.txt
+writing top-level names to serial_node.egg-info/top_level.txt
+reading manifest file 'serial_node.egg-info/SOURCES.txt'
+writing manifest file 'serial_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/python3.12/site-packages/serial-node.egg-link (link to .)
+Installing serial_bridge script to /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/lib/serial_node
+
+Installed /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node
+running symlink_data
+symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/resource/serial_node -> /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/ament_index/resource_index/packages
+symbolically linking /home/nour-mahgoub/Graduation_Rafeeq/build/serial_node/package.xml -> /home/nour-mahgoub/Graduation_Rafeeq/install/serial_node/share/serial_node

@@ -1,0 +1,4 @@
+source;share/rafeeq__navigation/local_setup.bash
+source;share/rafeeq__navigation/local_setup.dsv
+source;share/rafeeq__navigation/local_setup.sh
+source;share/rafeeq__navigation/local_setup.zsh
