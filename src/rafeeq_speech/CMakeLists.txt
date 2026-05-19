@@ -19,6 +19,11 @@ install(DIRECTORY models/
   DESTINATION share/${PROJECT_NAME}/models
 )
 
+# Install pre-recorded command WAV files for playback confirmation
+install(DIRECTORY command_records/
+  DESTINATION share/${PROJECT_NAME}/command_records
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
