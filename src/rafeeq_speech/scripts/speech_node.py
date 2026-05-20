@@ -119,20 +119,51 @@ class SpeechRecognitionNode(Node):
 
         return None  # node shutting down
 
-    def _wait_for_silence(self, stream, duration_s: float) -> bool:
+    def _wait_for_confirmation(self, stream, duration_s: float) -> bool:
         """
-        Listen for `duration_s` seconds after speaking the command back.
-        Returns True  → silence throughout → user accepts → publish.
-        Returns False → voice detected     → user cancels → go back to sleep.
+        Listen for `duration_s` seconds after the robot plays back the command.
+
+        Cancel rule — ONLY if the model confidently detects "stop":
+          - Noise / low confidence / any other command → ignored, keep waiting
+          - "stop" detected with confidence >= confidence_threshold → cancel
+
+        This prevents false cancellations from background noise, TV,
+        or the speaker echo re-triggering the mic.
+
+        Returns True  → window completed without "stop" → publish.
+        Returns False → "stop" detected                → cancel, back to sleep.
         """
-        n_chunks = int(SAMPLE_RATE / CHUNK * duration_s)
-        for _ in range(n_chunks):
-            if not self._running:
-                return False
+        n_window  = int(SAMPLE_RATE / CHUNK * self.duration)
+        n_timeout = int(SAMPLE_RATE / CHUNK * duration_s)
+        count = 0
+
+        while self._running and count < n_timeout:
             chunk = stream.read(CHUNK, exception_on_overflow=False)
+            count += 1
+
             if self._get_rms(chunk) > self.volume_threshold:
-                return False  # user said something → cancel
-        return True  # full silence → accept
+                # Voice detected — run the model to check if it's "stop"
+                frames = [chunk] + [
+                    stream.read(CHUNK, exception_on_overflow=False)
+                    for _ in range(n_window)
+                ]
+                count += n_window  # account for the chunks we just consumed
+                raw   = b''.join(frames)
+                audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+                _, conf, label = self._run_inference(audio)
+
+                if label == 'stop' and conf >= self.confidence_threshold:
+                    self.get_logger().warn(
+                        f'"stop" detected ({conf*100:.1f}%) — command cancelled.'
+                    )
+                    return False  # explicit cancel
+
+                # Anything else (noise, echo, other command) → ignore
+                self.get_logger().debug(
+                    f'Ignored during confirmation: "{label}" ({conf*100:.1f}%)'
+                )
+
+        return True  # window expired without "stop" → accept
 
     def _play_wav(self, command: str):
         """
@@ -239,7 +270,7 @@ class SpeechRecognitionNode(Node):
                 )
                 self._play_wav(command)
 
-                accepted = self._wait_for_silence(stream, duration_s=self.confirm_silence)
+                accepted = self._wait_for_confirmation(stream, duration_s=self.confirm_silence)
 
                 if accepted:
                     self.get_logger().info(
@@ -250,7 +281,7 @@ class SpeechRecognitionNode(Node):
                     self.nav_pub.publish(msg)
                 else:
                     self.get_logger().warn(
-                        f'Cancelled by user — "{command}" discarded, going back to sleep.'
+                        f'Cancelled — "{command}" discarded, going back to sleep.'
                     )
 
                 # Always return to sleep after one command cycle
