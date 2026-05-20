@@ -2,6 +2,17 @@
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/launch/speech_recognition.launch.py
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/labels.txt
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/models/rafeeq_model.tflite
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/go_to_bathroom.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/go_to_bedroom.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/go_to_kitchen.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/go_to_livingroom.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/move_backward.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/move_forward.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/rafeeq.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/sleep.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/stop.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/turn_left.wav
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/command_records/turn_right.wav
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/package_run_dependencies/rafeeq_speech
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/ament_index/resource_index/parent_prefix_path/rafeeq_speech
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_speech/share/rafeeq_speech/environment/ament_prefix_path.sh

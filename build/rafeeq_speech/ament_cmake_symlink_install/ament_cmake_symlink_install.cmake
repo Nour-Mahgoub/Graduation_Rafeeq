@@ -324,6 +324,9 @@ ament_cmake_symlink_install_directory("/home/nour-mahgoub/Graduation_Rafeeq/src/
 # install(DIRECTORY "models/" "DESTINATION" "share/rafeeq_speech/models")
 ament_cmake_symlink_install_directory("/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech" DIRECTORY "models/" "DESTINATION" "share/rafeeq_speech/models")
 
+# install(DIRECTORY "command_records/" "DESTINATION" "share/rafeeq_speech/command_records")
+ament_cmake_symlink_install_directory("/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech" DIRECTORY "command_records/" "DESTINATION" "share/rafeeq_speech/command_records")
+
 # install(FILES "/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rafeeq_speech" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/nour-mahgoub/Graduation_Rafeeq/src/rafeeq_speech" FILES "/home/nour-mahgoub/Graduation_Rafeeq/build/rafeeq_speech/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rafeeq_speech" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
