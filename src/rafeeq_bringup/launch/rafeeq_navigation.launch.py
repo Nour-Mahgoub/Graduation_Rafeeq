@@ -7,7 +7,7 @@ import os
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.conditions import IfCondition
+from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
 from launch_ros.actions import Node
@@ -19,6 +19,7 @@ def generate_launch_description():
     pkg_share_localization = FindPackageShare('rafeeq_localization').find('rafeeq_localization')
     pkg_share_slam = FindPackageShare('rafeeq_slam').find('rafeeq_slam')
     pkg_share_gazebo = FindPackageShare('rafeeq_description').find('rafeeq_description')
+    pkg_share_nav = FindPackageShare('rafeeq_navigation').find('rafeeq_navigation')
     nav2_dir = FindPackageShare('nav2_bringup').find('nav2_bringup')
 
     default_ekf_launch_path = PathJoinSubstitution(
@@ -28,7 +29,9 @@ def generate_launch_description():
     default_gazebo_launch_path = PathJoinSubstitution(
         [pkg_share_gazebo, 'launch', 'gazebo.launch.py'])
     default_nav2_params_path = PathJoinSubstitution(
-        [pkg_share_slam, 'config', 'slam_param_config.yaml'])
+        [pkg_share_nav, 'config', 'rafeeq_nav2_default_parans.yaml'])
+    default_map_path = PathJoinSubstitution(
+        [pkg_share_nav, 'maps', 'map.yaml'])
     default_rviz_config_path = PathJoinSubstitution(
         [pkg_share_slam, 'config', 'rviz_config.yaml'])
     pkg_share_bringup = FindPackageShare('rafeeq_bringup').find('rafeeq_bringup')
@@ -60,7 +63,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         name='map',
-        default_value='',
+        default_value=default_map_path,
         description='Full path to map YAML file to load (not needed when slam:=True)')
 
     declare_namespace_cmd = DeclareLaunchArgument(
@@ -85,7 +88,7 @@ def generate_launch_description():
 
     declare_use_composition_cmd = DeclareLaunchArgument(
         name='use_composition',
-        default_value='True',
+        default_value='False',
         description='Whether to use composed bringup')
 
     declare_use_namespace_cmd = DeclareLaunchArgument(
@@ -139,7 +142,7 @@ def generate_launch_description():
     start_localization_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(nav2_launch_dir, 'localization_launch.py')),
-        condition=IfCondition(PythonExpression(['not ', slam])),
+        condition=UnlessCondition(slam),
         launch_arguments={
             'namespace': namespace,
             'map': map_yaml_file,
@@ -154,7 +157,7 @@ def generate_launch_description():
     start_ros2_navigation_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_share_bringup, 'launch', 'navigation_launch.py')),
-        condition=IfCondition(PythonExpression(['not ', slam])),
+        condition=UnlessCondition(slam),
         launch_arguments={
             'namespace': namespace,
             'use_sim_time': use_sim_time,

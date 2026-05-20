@@ -17,7 +17,7 @@ amcl:
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: "base_footprint"
+    base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -37,7 +37,12 @@ amcl:
     recovery_alpha_fast: 0.0
     recovery_alpha_slow: 0.0
     resample_interval: 1
-    robot_model_type: "nav2_amcl::OmniMotionModel" # Use "nav2_amcl::DifferentialMotionModel" if you have a differential drive robot
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    set_initial_pose: true
+    initial_pose_x: 0.0
+    initial_pose_y: 0.0
+    initial_pose_z: 0.0
+    initial_pose_yaw: 0.0
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true # map to odom frame transform
@@ -98,11 +103,11 @@ controller_server:
       required_movement_radius: 0.5
       movement_time_allowance: 10.0
     # Goal checker parameters
-    #precise_goal_checker:
-    #  plugin: "nav2_controller::SimpleGoalChecker"
-    #  xy_goal_tolerance: 0.25
-    #  yaw_goal_tolerance: 0.25
-    #  stateful: True
+    precise_goal_checker:
+     plugin: "nav2_controller::SimpleGoalChecker"
+     xy_goal_tolerance: 0.25
+     yaw_goal_tolerance: 0.25
+     stateful: True
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
@@ -130,7 +135,7 @@ controller_server:
       transform_tolerance: 0.1
       temperature: 0.3
       gamma: 0.015
-      motion_model: "Omni"
+      motion_model: "DiffDrive"
       visualize: false
       regenerate_noises: false
       TrajectoryVisualizer:
@@ -392,7 +397,7 @@ velocity_smoother:
 
 collision_monitor:
   ros__parameters:
-    base_frame_id: "base_footprint"
+    base_frame_id: "base_link"
     odom_frame_id: "odom"
     cmd_vel_in_topic: "cmd_vel_smoothed"
     cmd_vel_out_topic: "cmd_vel"
@@ -449,7 +454,7 @@ slam_toolbox:
     # ROS Parameters
     odom_frame: odom
     map_frame: map
-    base_frame: base_footprint
+    base_frame: base_link
     scan_topic: /scan
     use_map_saver: true
     mode: mapping #localization

@@ -20,6 +20,14 @@ meshes/Lidar_Link.STL
 meshes/RightMotor.STL
 meshes/RightWingWheel.STL
 meshes/base_link.STL
+models/house_interior/house_interior_with_qrcodes.dae
+models/house_interior/model.config
+models/house_interior/wp_1.png
+models/house_interior/wp_2.png
+models/house_interior/wp_3.png
+models/house_interior/wp_4.png
+models/house_interior/wp_5.png
+models/house_interior/wp_6.png
 rafeeq_description/__init__.py
 rafeeq_description/scan_relay.py
 rafeeq_description/teleop_keyboard.py
@@ -29,5 +37,6 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 urdf/robot_description.urdf
+world/indoor_environment.sdf
 world/world.sdf
 world/world.world

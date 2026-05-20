@@ -1,7 +1,7 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, TimerAction
+from launch.actions import ExecuteProcess, TimerAction, SetEnvironmentVariable
 from launch_ros.actions import Node
 
 
@@ -18,9 +18,18 @@ def generate_launch_description():
         f'file://{pkg_share}/'
     )
 
-    world_file = os.path.join(pkg_share, 'world', 'world.sdf')
+    world_file = os.path.join(pkg_share, 'world', 'indoor_environment.sdf')
+    models_dir = os.path.join(pkg_share, 'models')
+
+    # Prepend models directory so Gazebo resolves model:// URIs from this package
+    gz_resource_path = models_dir
+    existing = os.environ.get('GZ_SIM_RESOURCE_PATH', '')
+    if existing:
+        gz_resource_path = gz_resource_path + ':' + existing
 
     return LaunchDescription([
+        SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', gz_resource_path),
+
         # Start Gazebo Harmonic with custom world
         ExecuteProcess(
             cmd=['gz', 'sim', '--verbose', '-r', world_file],
@@ -49,7 +58,7 @@ def generate_launch_description():
                 '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
                 '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
                 '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
-                '/world/default/model/rafeeq/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model',
+'/world/default/model/rafeeq/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model',
             ],
             remappings=[
                 ('/world/default/model/rafeeq/joint_state', '/joint_states'),
@@ -62,7 +71,10 @@ def generate_launch_description():
         Node(
             package='rafeeq_description',
             executable='scan_relay',
-            output='screen'
+            output='screen',
+            parameters=[{
+                'use_sim_time': True,
+            }],
         ),
 
         # Spawn robot after Gazebo loads (world name matches <world name="default"> in world.sdf)
@@ -75,7 +87,7 @@ def generate_launch_description():
                         '-world', 'default',
                         '-string', robot_description_ign,
                         '-name', 'rafeeq',
-                        '-x', '0', '-y', '0', '-z', '0.01',
+                        '-x', '-6', '-y', '-2', '-z', '0.01',
                     ],
                     output='screen'
                 ),

@@ -16,7 +16,7 @@
         xyz="-0.00381343468177519 3.12028000548636E-07 -0.0579874690766364"
         rpy="0 0 0" />
       <mass
-        value="68.5887337151705" />
+        value="15" />
       <inertia
         ixx="2.32799353052859"
         ixy="3.65773974464467E-05"
@@ -102,9 +102,9 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.005"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="BackLeftWheel">
@@ -158,9 +158,9 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.05"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="RightMotor">
@@ -202,8 +202,11 @@
   <joint
     name="RightMotor_joint"
     type="continuous">
-    <origin
+    <!-- <origin
       xyz="-0.30241 -0.17408 -0.35719"
+      rpy="1.5708 0 0" /> -->
+      <origin
+      xyz="-0.30241 -0.17408 -0.2"
       rpy="1.5708 0 0" />
     <parent
       link="base_link" />
@@ -214,9 +217,9 @@
     <limit
       effort="8.1"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.005"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="LeftMotor">
@@ -258,8 +261,11 @@
   <joint
     name="LeftMotor_joint"
     type="continuous">
-    <origin
+    <!-- <origin
       xyz="-0.30241 0.17408 -0.35719"
+      rpy="1.5708 0 0" /> -->
+      <origin
+      xyz="-0.30241 0.17408 -0.2"
       rpy="1.5708 0 0" />
     <parent
       link="base_link" />
@@ -270,9 +276,9 @@
     <limit
       effort="8.1"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.005"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="RightWingWheel">
@@ -329,9 +335,9 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.005"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="LeftWingWheel">
@@ -388,9 +394,9 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
+    <!-- <dynamics
       damping="0.005"
-      friction="0.01" />
+      friction="0.01" /> -->
   </joint>
   <link
     name="Lidar_Link">
@@ -516,17 +522,20 @@
   <!-- Lidar sensor -->
   <gazebo reference="Lidar_Link">
     <sensor name="lidar" type="gpu_lidar">
+    <!-- <pose relative_to="Lidar_Link">0 0 0 0 0 0</pose> -->
+
       <topic>/scan</topic>
       <update_rate>10</update_rate>
       <always_on>true</always_on>
       <visualize>true</visualize>
+      
       <lidar>
         <scan>
           <horizontal>
             <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>-3.14159265</min_angle>
-            <max_angle>3.14159265</max_angle>
+            <min_angle>-1.570796325</min_angle>
+            <max_angle>1.570796325</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -541,6 +550,12 @@
         </noise>
       </lidar>
     </sensor>
+  </gazebo>
+
+  <gazebo>
+  <!-- <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+    <render_engine>ogre2</render_engine>
+    </plugin> -->
   </gazebo>
 
   <!-- IMU sensor -->
@@ -617,13 +632,36 @@
             name="gz::sim::systems::DiffDrive">
       <left_joint>BackLeftWheel_joint</left_joint>
       <right_joint>BackRightWheel_joint</right_joint>
-      <wheel_separation>0.635</wheel_separation>
+      <wheel_separation>0.636</wheel_separation>
       <wheel_radius>0.305</wheel_radius>
-      <odom_publish_frequency>10</odom_publish_frequency>
+      <odom_publish_frequency>25</odom_publish_frequency>
       <topic>/cmd_vel</topic>
       <odom_topic>/odom</odom_topic>
       <frame_id>odom</frame_id>
       <child_frame_id>base_footprint</child_frame_id>
+
+
+      <!-- <left_joint>LeftMotor_joint</left_joint>
+      <right_joint>RightMotor_joint</right_joint>
+      <wheel_separation>0.348</wheel_separation>
+      <wheel_radius>0.127</wheel_radius>
+      <odom_publish_frequency>25</odom_publish_frequency>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id> -->
+
+      
+       <!-- <max_wheel_torque>200</max_wheel_torque>
+      <max_wheel_acceleration>10.0</max_wheel_acceleration>
+      <max_linear_acceleration>1</max_linear_acceleration>
+      <min_linear_acceleration>-1</min_linear_acceleration>
+      <max_angular_acceleration>2</max_angular_acceleration>
+      <min_angular_acceleration>-2</min_angular_acceleration>
+      <max_linear_velocity>5</max_linear_velocity>
+      <min_linear_velocity>-5</min_linear_velocity>
+      <max_angular_velocity>5</max_angular_velocity>
+      <min_angular_velocity>-5</min_angular_velocity> -->
     </plugin>
   </gazebo>
 
