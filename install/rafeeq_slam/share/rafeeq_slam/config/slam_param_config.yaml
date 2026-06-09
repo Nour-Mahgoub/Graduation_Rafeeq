@@ -22,8 +22,8 @@ slam_toolbox:
     resolution: 0.04
     max_laser_range: 12.0
     minimum_time_interval: 0.1
-    transform_timeout: 0.2
-    tf_buffer_duration: 20.0
+    transform_timeout: 0.5
+    tf_buffer_duration: 50.0
     stack_size_to_use: 40000000
     enable_interactive_mode: false
 
@@ -36,7 +36,8 @@ slam_toolbox:
     scan_buffer_maximum_scan_distance: 7.0
     link_match_minimum_response_fine: 0.1
     link_scan_maximum_distance: 1.0
-    loop_search_maximum_distance: 3.0
+    # loop_search_maximum_distance: 3.0
+    loop_search_maximum_distance: 1.5
     do_loop_closing: true
     loop_match_minimum_chain_size: 10
     loop_match_maximum_variance_coarse: 3.0

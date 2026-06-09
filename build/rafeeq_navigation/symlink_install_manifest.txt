@@ -1,6 +1,8 @@
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/config/rafeeq_nav2_default_parans.yaml
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/.pgm
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/.yaml
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/indoor_map.pgm
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/indoor_map.yaml
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/map.pgm
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/rafeeq_navigation/maps/map.yaml
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_navigation/share/ament_index/resource_index/package_run_dependencies/rafeeq_navigation

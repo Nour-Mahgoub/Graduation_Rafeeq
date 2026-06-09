@@ -1,3 +1,5 @@
 /build
 /install
 /log
+cc.env
+litellm_config.yaml

@@ -18,7 +18,7 @@ def generate_launch_description():
         f'file://{pkg_share}/'
     )
 
-    world_file = os.path.join(pkg_share, 'world', 'indoor_environment.sdf')
+    world_file = os.path.join(pkg_share, 'world', 'world.sdf')
     models_dir = os.path.join(pkg_share, 'models')
 
     # Prepend models directory so Gazebo resolves model:// URIs from this package

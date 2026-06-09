@@ -159,6 +159,7 @@ def generate_launch_description():
             os.path.join(pkg_share_bringup, 'launch', 'navigation_launch.py')),
         condition=UnlessCondition(slam),
         launch_arguments={
+
             'namespace': namespace,
             'use_sim_time': use_sim_time,
             'params_file': nav2_params_file,

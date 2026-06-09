@@ -1,11 +1,22 @@
 #!/usr/bin/env python3
 """
 SmartWheel Serial Bridge Node
-Reads CSV serial data from Arduino and publishes:
+Bidirectional communication between ROS 2 and Arduino.
+
+Arduino → RPi (20Hz CSV):
+  L<ticks>,R<ticks>,AX<m/s²>,AY<m/s²>,AZ<m/s²>,GX<rad/s>,GY<rad/s>,GZ<rad/s>,US<cm>
+
+RPi → Arduino (on cmd_vel):
+  V<linear_x>,W<angular_z>\n
+
+Publishes:
   - /odom          (nav_msgs/Odometry)
   - /imu/data      (sensor_msgs/Imu)
   - /ultrasonic    (sensor_msgs/Range)
-  - /tf            (odom -> base_link transform)
+  - /tf            (odom → base_footprint transform)
+
+Subscribes:
+  - /cmd_vel       (geometry_msgs/Twist)
 
 Usage:
   ros2 run serial_node serial_bridge --ros-args -p port:=/dev/ttyUSB0
@@ -19,14 +30,15 @@ import re
 
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import Imu, Range
-from geometry_msgs.msg import TransformStamped, Quaternion
+from geometry_msgs.msg import Twist, TransformStamped, Quaternion
 from tf2_ros import TransformBroadcaster
 
 
 # ─── ROBOT PHYSICAL PARAMETERS ───────────────────────────────────────────────
-WHEEL_RADIUS     = 0.085   # metres — actual motor wheel radius
-WHEEL_SEPARATION = 0.34    # metres — distance between left and right motor wheels
-ENCODER_CPR      = 360     # encoder counts per revolution
+WHEEL_RADIUS     = 0.085   # metres — measure your actual hoverboard wheel radius
+WHEEL_SEPARATION = 0.34    # metres — measure axle centre to axle centre
+ENCODER_CPR      = 90      # 6 × 15 pole pairs (standard hoverboard hub motor)
+                            # Verify: count rotor magnets ÷ 2 = pole pairs
 
 
 class SerialBridgeNode(Node):
@@ -56,6 +68,14 @@ class SerialBridgeNode(Node):
         self.imu_pub   = self.create_publisher(Imu,      '/imu/data',   10)
         self.range_pub = self.create_publisher(Range,    '/ultrasonic', 10)
 
+        # ── Subscriber ───────────────────────────────────────────────────────
+        self.cmd_vel_sub = self.create_subscription(
+            Twist,
+            '/cmd_vel',
+            self.cmd_vel_callback,
+            10
+        )
+
         # ── TF Broadcaster ───────────────────────────────────────────────────
         self.tf_broadcaster = TransformBroadcaster(self)
 
@@ -71,6 +91,21 @@ class SerialBridgeNode(Node):
         self.timer = self.create_timer(0.05, self.read_serial)
 
         self.get_logger().info('SmartWheel serial bridge node started')
+
+    # ─── CMD_VEL CALLBACK ────────────────────────────────────────────────────
+    def cmd_vel_callback(self, msg: Twist):
+        """
+        Receive /cmd_vel from Nav2 and forward to Arduino as:
+        V<linear_x>,W<angular_z>\n
+        Arduino parses this and converts to hoverboard ESC commands.
+        """
+        linear  = msg.linear.x
+        angular = msg.angular.z
+        cmd = f'V{linear:.4f},W{angular:.4f}\n'
+        try:
+            self.ser.write(cmd.encode('utf-8'))
+        except serial.SerialException as e:
+            self.get_logger().error(f'Serial write failed: {e}')
 
     # ─── SERIAL READ CALLBACK ────────────────────────────────────────────────
     def read_serial(self):
@@ -101,6 +136,8 @@ class SerialBridgeNode(Node):
         """
         Parse: L<>,R<>,AX<>,AY<>,AZ<>,GX<>,GY<>,GZ<>,US<>
         Returns dict or None on failure.
+        Arduino sends cumulative long ticks for L and R.
+        IMU values must already be in SI units (m/s² and rad/s) from Arduino.
         """
         try:
             pattern = (
@@ -115,13 +152,13 @@ class SerialBridgeNode(Node):
             return {
                 'left_ticks':  int(m.group(1)),
                 'right_ticks': int(m.group(2)),
-                'ax': float(m.group(3)),
+                'ax': float(m.group(3)),   # m/s² — converted on Arduino
                 'ay': float(m.group(4)),
                 'az': float(m.group(5)),
-                'gx': float(m.group(6)),
+                'gx': float(m.group(6)),   # rad/s — converted on Arduino
                 'gy': float(m.group(7)),
                 'gz': float(m.group(8)),
-                'us': float(m.group(9)),
+                'us': float(m.group(9)),   # cm
             }
         except Exception:
             return None
@@ -131,15 +168,16 @@ class SerialBridgeNode(Node):
         left_ticks  = data['left_ticks']
         right_ticks = data['right_ticks']
 
+        # First reading — just initialise, no delta yet
         if self.prev_left_ticks is None:
             self.prev_left_ticks  = left_ticks
             self.prev_right_ticks = right_ticks
             self.last_stamp = stamp
             return
 
-        # Tick deltas → wheel arc distances
-        d_left  = (left_ticks  - self.prev_left_ticks)  / ENCODER_CPR * 2 * math.pi * WHEEL_RADIUS
-        d_right = (right_ticks - self.prev_right_ticks) / ENCODER_CPR * 2 * math.pi * WHEEL_RADIUS
+        # Tick deltas → wheel arc distances (metres)
+        d_left  = ((left_ticks  - self.prev_left_ticks)  / ENCODER_CPR) * 2.0 * math.pi * WHEEL_RADIUS
+        d_right = ((right_ticks - self.prev_right_ticks) / ENCODER_CPR) * 2.0 * math.pi * WHEEL_RADIUS
         self.prev_left_ticks  = left_ticks
         self.prev_right_ticks = right_ticks
 
@@ -151,10 +189,13 @@ class SerialBridgeNode(Node):
         self.x   += d_center * math.cos(self.yaw)
         self.y   += d_center * math.sin(self.yaw)
 
-        # Time delta for velocity estimate
-        dt = 0.05  # nominal 20 Hz; good enough for velocity
+        # Time delta for velocity
+        dt = 0.05  # fallback 20 Hz
         if self.last_stamp is not None:
-            dt_ns = (stamp.sec - self.last_stamp.sec) * 1e9 + (stamp.nanosec - self.last_stamp.nanosec)
+            dt_ns = (
+                (stamp.sec - self.last_stamp.sec) * 1_000_000_000
+                + (stamp.nanosec - self.last_stamp.nanosec)
+            )
             if dt_ns > 0:
                 dt = dt_ns / 1e9
         self.last_stamp = stamp
@@ -165,23 +206,32 @@ class SerialBridgeNode(Node):
         odom = Odometry()
         odom.header.stamp    = stamp
         odom.header.frame_id = 'odom'
-        odom.child_frame_id  = 'base_link'
+        odom.child_frame_id  = 'base_footprint'
 
         odom.pose.pose.position.x  = self.x
         odom.pose.pose.position.y  = self.y
         odom.pose.pose.position.z  = 0.0
         odom.pose.pose.orientation = q
 
+        # Pose covariance (diagonal) — tune after real hardware testing
+        odom.pose.covariance[0]  = 0.01   # x
+        odom.pose.covariance[7]  = 0.01   # y
+        odom.pose.covariance[35] = 0.05   # yaw
+
         odom.twist.twist.linear.x  = d_center / dt
         odom.twist.twist.angular.z = d_yaw    / dt
 
+        # Twist covariance
+        odom.twist.covariance[0]  = 0.01
+        odom.twist.covariance[35] = 0.05
+
         self.odom_pub.publish(odom)
 
-        # ── Broadcast odom → base_link TF ────────────────────────────────────
+        # ── Broadcast odom → base_footprint TF ──────────────────────────────
         tf = TransformStamped()
         tf.header.stamp            = stamp
         tf.header.frame_id         = 'odom'
-        tf.child_frame_id          = 'base_link'
+        tf.child_frame_id          = 'base_footprint'
         tf.transform.translation.x = self.x
         tf.transform.translation.y = self.y
         tf.transform.translation.z = 0.0
@@ -195,6 +245,7 @@ class SerialBridgeNode(Node):
         imu.header.stamp    = stamp
         imu.header.frame_id = 'imu_link'
 
+        # Values already in SI units — converted by Arduino before sending
         imu.linear_acceleration.x = data['ax']
         imu.linear_acceleration.y = data['ay']
         imu.linear_acceleration.z = data['az']
@@ -203,9 +254,10 @@ class SerialBridgeNode(Node):
         imu.angular_velocity.y = data['gy']
         imu.angular_velocity.z = data['gz']
 
-        # Raw MPU6050 — orientation unknown, tell robot_localization to ignore it
+        # Raw MPU6050 — no orientation estimate, tell robot_localization to ignore
         imu.orientation_covariance[0] = -1.0
 
+        # Covariance diagonals — tune after calibration
         imu.linear_acceleration_covariance[0] = 0.01
         imu.linear_acceleration_covariance[4] = 0.01
         imu.linear_acceleration_covariance[8] = 0.01
@@ -225,7 +277,7 @@ class SerialBridgeNode(Node):
         rng.header.stamp    = stamp
         rng.header.frame_id = 'ultrasonic_link'
         rng.radiation_type  = Range.ULTRASOUND
-        rng.field_of_view   = 0.26   # ~15 degrees
+        rng.field_of_view   = 0.26   # ~15 degrees in radians
         rng.min_range       = 0.05   # 5 cm
         rng.max_range       = 2.0    # 200 cm
         rng.range           = data['us'] / 100.0  # cm → metres
@@ -242,6 +294,11 @@ class SerialBridgeNode(Node):
         return q
 
     def destroy_node(self):
+        # Send stop command before shutting down
+        try:
+            self.ser.write(b'V0.0000,W0.0000\n')
+        except Exception:
+            pass
         if self.ser.is_open:
             self.ser.close()
         super().destroy_node()

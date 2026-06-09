@@ -505,6 +505,37 @@
       xyz="0 0 0" />
   </joint>
 
+<!-- Kinect Depth Camera Gazebo Plugin -->
+<gazebo reference="Camera_Link">
+  <sensor name="kinect_depth" type="depth">
+    <update_rate>10</update_rate>
+    <camera>
+      <horizontal_fov>1.047197551</horizontal_fov>  <!-- 60 degrees -->
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.5</near>   <!-- Kinect 360 min range -->
+        <far>4.5</far>     <!-- Kinect 360 max range -->
+      </clip>
+    </camera>
+    <plugin name="kinect_plugin" filename="libgazebo_ros_depth_camera.so">
+      <ros>
+        <remapping>~/points~>/depth/points</remapping>
+        <remapping>~/image_raw~>/depth/image_raw</remapping>
+        <remapping>~/camera_info~>/depth/camera_info</remapping>
+      </ros>
+      <camera_name>kinect</camera_name>
+      <frame_name>Camera_Link</frame_name>
+      <hack_baseline>0.07</hack_baseline>
+      <min_depth>0.5</min_depth>
+      <max_depth>4.5</max_depth>
+    </plugin>
+  </sensor>
+</gazebo>
+
   <!-- IMU link (massless, fixed to base_link centre) -->
   <link name="imu_link">
     <inertial>
