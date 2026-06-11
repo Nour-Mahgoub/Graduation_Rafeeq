@@ -56,7 +56,7 @@ def generate_launch_description():
 
     serial_port_arg = DeclareLaunchArgument(
         name='serial_port',
-        default_value='/dev/ttyUSB0',
+        default_value='/dev/ttyACM0',
         description='Serial port for Arduino communication'
     )
 

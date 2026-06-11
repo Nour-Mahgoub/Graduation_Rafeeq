@@ -1,5 +1,6 @@
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/launch/lidar.launch.py
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/launch/navigation_launch.py
+/home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/launch/rafeeq_bringup.launch.py
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/launch/rafeeq_navigation.launch.py
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/scripts/rafeeq_gazebo.sh
 /home/nour-mahgoub/Graduation_Rafeeq/install/rafeeq_bringup/share/rafeeq_bringup/scripts/rafeeq_navigation.sh

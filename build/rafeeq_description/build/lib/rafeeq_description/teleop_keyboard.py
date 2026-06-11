@@ -60,7 +60,7 @@ def main():
                 node.linear, node.angular = 0.0, 0.0
             elif key == ord('+') or key == ord('='):
                 node.speed = min(node.speed + 0.1, 2.0)
-                node.turn = min(node.turn + 0.1, 3.0)
+                node.turn = min(node.turn + 0.1, 10.0)
             elif key == ord('-'):
                 node.speed = max(node.speed - 0.1, 0.1)
                 node.turn = max(node.turn - 0.1, 0.1)
